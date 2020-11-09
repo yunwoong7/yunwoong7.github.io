@@ -1,18 +1,19 @@
 ---
 layout: about
 title: About Me
-author: Johnathan Smith
+author: Yunwoong Kim
 image: assets/images/about/author.jpg
 signature: assets/images/about/signature.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat.
+안녕하세요. 김윤웅입니다. 👋
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.
+저는 현재 SK 주식회사 C&C에 근무하고 있습니다.
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+프로그램 개발을 좋아하는데 다행히 입사 후 개발을 할 수 있는 좋은 기회가 많아 다양한 경험을
+
+할 수 있었습니다.
+
+개발에 대한 열정이 식지 않도록 꾸준히 노력하겠습니다.
+
+감사합니다.

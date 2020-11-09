@@ -7,12 +7,12 @@ author: themefisher
 description: this is meta description
 email: yunwoong7@gmail.com
 phone: +82 010 4126 2003
-address: 125/A, CA Commercial Area, California, USA
+address: 71-18, Gugal-ro, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
 - {name: About, link: '/about'}
-- {name: Blog, link: '/blog'}
+#- {name: Blog, link: '/blog'}
 - {name: Portfolio, link: '/portfolio'}
 - {name: Contact, link: '/contact'}
 
@@ -20,8 +20,7 @@ menu:
 #-------------------------------
 # Google Analytics Section
 
-# Analytics helps you understand who visits your website.
-# Learn more at: http://support.google.com/analytics/answer/1008065
+# Analytics helps you understand who visits your website.# Learn more at: http://support.google.com/analytics/answer/1008065
 
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
@@ -61,33 +60,33 @@ blurb-btn-name: know more
 # About Page
 
 # Work Process Section
-work-process:
-  - title : "Research and Plan"
-    icon : "assets/images/icons/plan.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
-  - title : "Design and Develop"
-    icon : "assets/images/icons/design.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
-  - title : "Deliver"
-    icon : "assets/images/icons/print.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-
-# My Team Section
-team:
-  - title : "Jack Schenziwe"
-    image : "assets/images/team/member-1.png"
-    designation : "Project Manager"
-    
-  - title : "Julias Carlie"
-    image : "assets/images/team/member-2.png"
-    designation : "Web Developer"
-    
-  - title : "John Doe"
-    image : "assets/images/team/member-3.png"
-    designation : "Designer"
+#work-process:
+#  - title : "Research and Plan"
+#    icon : "assets/images/icons/plan.png"
+#    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+#
+#  - title : "Design and Develop"
+#    icon : "assets/images/icons/design.png"
+#    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+#
+#  - title : "Deliver"
+#    icon : "assets/images/icons/print.png"
+#    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+#
+#
+## My Team Section
+#team:
+#  - title : "Jack Schenziwe"
+#    image : "assets/images/team/member-1.png"
+#    designation : "Project Manager"
+#
+#  - title : "Julias Carlie"
+#    image : "assets/images/team/member-2.png"
+#    designation : "Web Developer"
+#
+#  - title : "John Doe"
+#    image : "assets/images/team/member-3.png"
+#    designation : "Designer"
 
 
 #-------------------------------
@@ -100,9 +99,7 @@ skills:
 - {name: Java, color: '#bdecf6', value: '70%'}
 - {name: Javascrip, color: '#ffbcaa', value: '80%'}
 - {name: SQL, color: '#b5fbe2', value: '90%'}
-- {name: Web App, color: '#9473e6', value: '60%'}
-- {name: SQL, color: '#bdecf6', value: '80%'}
-- {name: DL/ML, color: '#ffbcaa', value: '70%'}
+- {name: DL/ML, color: '#ffbcc8', value: '70%'}
 
 
 #-------------------------------
@@ -113,7 +110,7 @@ experience:
 - {name: Junior Software Developer, icon: 'icon-2.png', date: 'Jan 2011 - Mar 2013', organization: 'Application'}
 - {name: Senior Software Developer, icon: 'icon-2.png', date: 'Apr 2013 - Jul 2015', organization: 'Application'}
 - {name: UX & UI Designer, icon: 'icon-1.png', date: 'Aug 2015 - Dec 2016', organization: 'Web'}
-- {name: Senior Software Developer, icon: 'icon-2.png', date: 'Jan 2017 - Sep 2017', organization: 'Web'}
+- {name: Senior Software Developer, icon: 'icon-1.png', date: 'Jan 2017 - Sep 2017', organization: 'Web'}
 - {name: Senior Software Developer, icon: 'icon-3.png', date: 'Oct 2018 - May 2019', organization: 'OCR Solution'}
 - {name: Senior Software Developer, icon: 'icon-3.png', date: 'Jul 2019 - Oct 2019', organization: 'Database Solution'}
 - {name: Senior Software Developer, icon: 'icon-3.png', date: 'Jan 2020 - Nov 2020', organization: 'RPA Solution'}
@@ -122,12 +119,12 @@ experience:
 #-------------------------------
 # Education Section
 
-education-title: Education
-education:
-- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
-- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
-- {name: Higher Secondary Certificat, date: '2000', organization: 'Cardiff School'}
-- {name: Secondary School Certificate, date: '1998', organization: 'Cardiff School'}
+#education-title: Education
+#education:
+#- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
+#- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
+#- {name: Higher Secondary Certificat, date: '2000', organization: 'Cardiff School'}
+#- {name: Secondary School Certificate, date: '1998', organization: 'Cardiff School'}
 
 
 #-------------------------------
@@ -278,39 +275,39 @@ testimonial-items:
 #-------------------------------
 # Client Slider Section
 
-client-slider-items:
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
+#client-slider-items:
+#  - logo: "assets/images/clients-logo/client-logo-1.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-2.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-3.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-4.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-5.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-1.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-2.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-3.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-4.png"
+#    url: "#"
+#
+#  - logo: "assets/images/clients-logo/client-logo-5.png"
+#    url: "#"
 
 #-------------------------------
 # Contact Section
 
 contact-title: Contact Info
-contact-email: steve.fruits@email.com
+contact-email: yunwoong7@gmail.com
