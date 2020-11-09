@@ -107,13 +107,12 @@ skills:
 
 experience-title: Experience
 experience:
-- {name: Junior Software Developer, icon: 'icon-2.png', date: 'Jan 2011 - Mar 2013', organization: 'Application'}
-- {name: Senior Software Developer, icon: 'icon-2.png', date: 'Apr 2013 - Jul 2015', organization: 'Application'}
-- {name: UX & UI Designer, icon: 'icon-1.png', date: 'Aug 2015 - Dec 2016', organization: 'Web'}
-- {name: Senior Software Developer, icon: 'icon-1.png', date: 'Jan 2017 - Sep 2017', organization: 'Web'}
-- {name: Senior Software Developer, icon: 'icon-3.png', date: 'Oct 2018 - May 2019', organization: 'OCR Solution'}
-- {name: Senior Software Developer, icon: 'icon-3.png', date: 'Jul 2019 - Oct 2019', organization: 'Database Solution'}
-- {name: Senior Software Developer, icon: 'icon-3.png', date: 'Jan 2020 - Nov 2020', organization: 'RPA Solution'}
+- {name: SKT UKey 2.0 Project, icon: 'icon-2.png', date: 'Jan 2011 - Mar 2013', organization: 'Junior Software Developer'}
+- {name: SKT/B Product Development, icon: 'icon-2.png', date: 'Apr 2013 - Jul 2015', organization: 'Junior Software Developer'}
+- {name: SKT Swing Project, icon: 'icon-1.png', date: 'Aug 2015 - Sep 2017', organization: 'Senior Software Developer'}
+- {name: OCR Solution, icon: 'icon-3.png', date: 'Oct 2018 - May 2019', organization: 'Senior Software Developer'}
+- {name: Database Solution, icon: 'icon-3.png', date: 'Jul 2019 - Oct 2019', organization: 'Senior Software Developer'}
+- {name: RPA Solution, icon: 'icon-3.png', date: 'Jan 2020 - Nov 2020', organization: 'Senior Software Developer'}
 
 
 #-------------------------------
