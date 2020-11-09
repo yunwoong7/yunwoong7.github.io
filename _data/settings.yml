@@ -100,7 +100,6 @@ skills: Languages
 - {name: Java, color: '#bdecf6', value: '70%'}
 - {name: Javascrip, color: '#ffbcaa', value: '80%'}
 - {name: SQL, color: '#b5fbe2', value: '90%'}
-
 - {name: Web App, color: '#9473e6', value: '60%'}
 - {name: SQL, color: '#bdecf6', value: '80%'}
 - {name: DL/ML, color: '#ffbcaa', value: '70%'}
@@ -134,26 +133,26 @@ education:
 #-------------------------------
 # Services Section
 
-services-title: Services
-services:
-- {
-    name: UI Design,
-    icon: ti-palette,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    active: # Add true to select section
-  }
-- {
-    name: UX Design,
-    icon: ti-vector,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    active: true # Add true to select section
-  }
-- {
-    name: Interaction Design,
-    icon: ti-panel,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    active: # Add true to select section
-  }
+#services-title: Services
+#services:
+#- {
+#    name: UI Design,
+#    icon: ti-palette,
+#    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+#    active: # Add true to select section
+#  }
+#- {
+#    name: UX Design,
+#    icon: ti-vector,
+#    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+#    active: true # Add true to select section
+#  }
+#- {
+#    name: Interaction Design,
+#    icon: ti-panel,
+#    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+#    active: # Add true to select section
+#  }
 
 
 
@@ -181,67 +180,79 @@ portfolio-home-items:
 # Portfolio Page
 portfolio-label:
 - {
-    title : "UI/UX Design",
-    type : "design"
+    title : "RPA",
+    type : "rpa"
   }
 - {
-    title : "BRANDING",
-    type : "branding"
+    title : "DeepLearning",
+    type : "deeplearning"
   }
 - {
-    title : "ILLUSTRATION",
-    type : "illustration"
+    title : "MachineLearning",
+    type : "machineLearning"
+  }
+- {
+    title : "Face Applications",
+    type : "face"
+  }
+- {
+    title : "Object Detection",
+    type : "detection"
+  }
+- {
+    title : "Object Tracking",
+    type : "tracking"
   }
 
 portfolio-items:
   - image : "assets/images/portfolio/item-1.png"
     url: "#"
     portfolio-type:
-     - type: "design"
-     - type: "illustration"
+     - type: "rpa"
+     - type: "machineLearning"
       
   - image : "assets/images/portfolio/item-2.png"
     url: "#"
     portfolio-type:
-      - type: "branding"
+      - type: "deeplearning"
       
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "machineLearning"
       
   - image : "assets/images/portfolio/item-6.png"
     url: "#"
     portfolio-type:
-      - type: "design"
-      - type: "branding"
+      - type: "rpa"
+      - type: "deeplearning"
       
   - image : "assets/images/portfolio/item-8.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "machineLearning"
       
   - image : "assets/images/portfolio/item-5.png"
     url: "#"
     portfolio-type:
-      - type: "design"
+      - type: "rpa"
       
   - image : "assets/images/portfolio/item-1.png"
     url: "#"
     portfolio-type:
-      - type: "branding"
+      - type: "deeplearning"
       
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
     portfolio-type:
-      - type: "design"
-      - type: "illustration"
-      - type: "branding"
+      - type: "rpa"
+      - type: "machineLearning"
+      - type: "deeplearning"
       
   - image : "assets/images/portfolio/item-7.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "machineLearning"
 
 
 #-------------------------------
