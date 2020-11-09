@@ -94,7 +94,7 @@ team:
 # Skills Section
 
 skills-title: Skills
-skills: Languages
+skills:
 - {name: Python, color: '#fdb157', value: '95%'}
 - {name: C, color: '#9473e6', value: '90%'}
 - {name: Java, color: '#bdecf6', value: '70%'}
