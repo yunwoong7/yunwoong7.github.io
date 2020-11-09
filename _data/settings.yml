@@ -1,12 +1,12 @@
 #-------------------------------
 # General Site Settings
 
-title: Kross
+title: Yunwoong's Blog
 logo: 
 author: themefisher
 description: this is meta description
-email: steve.fruits@email.com
-phone: +880 2544 658 256
+email: yunwoong7@gmail.com
+phone: +82 010 4126 2003
 address: 125/A, CA Commercial Area, California, USA
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
@@ -38,7 +38,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: Hi! I’m <br> Software <br> Developer
 
 social:
 - {icon: "ti-facebook", link: "#"}
@@ -95,10 +95,10 @@ team:
 
 skills-title: Skills
 skills:
-- {name: Web Design, color: '#fdb157', value: '90%'}
-- {name: Logo Design, color: '#9473e6', value: '60%'}
-- {name: After Effects, color: '#bdecf6', value: '80%'}
-- {name: Web App, color: '#ffbcaa', value: '70%'}
+- {name: Python, color: '#fdb157', value: '90%'}
+- {name: Web App, color: '#9473e6', value: '60%'}
+- {name: SQL, color: '#bdecf6', value: '80%'}
+- {name: DL/ML, color: '#ffbcaa', value: '70%'}
 
 
 #-------------------------------
@@ -108,6 +108,7 @@ experience-title: Experience
 experience:
 - {name: Junior UX Designer, icon: 'icon-1.png', date: 'Jan 2007 - Feb 2009', organization: 'WEBEX'}
 - {name: UX & UI Designer, icon: 'icon-2.png', date: 'Mar 2009 - Aug 2014', organization: 'AUGMEDIX'}
+- {name: Senior UI Designer, icon: 'icon-3.png', date: 'Sep 2014 - Present', organization: 'THEMEFISHER'}
 - {name: Senior UI Designer, icon: 'icon-3.png', date: 'Sep 2014 - Present', organization: 'THEMEFISHER'}
 
 
