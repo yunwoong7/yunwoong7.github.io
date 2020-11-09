@@ -94,8 +94,13 @@ team:
 # Skills Section
 
 skills-title: Skills
-skills:
-- {name: Python, color: '#fdb157', value: '90%'}
+skills: Languages
+- {name: Python, color: '#fdb157', value: '95%'}
+- {name: C, color: '#9473e6', value: '90%'}
+- {name: Java, color: '#bdecf6', value: '70%'}
+- {name: Javascrip, color: '#ffbcaa', value: '80%'}
+- {name: SQL, color: '#b5fbe2', value: '90%'}
+
 - {name: Web App, color: '#9473e6', value: '60%'}
 - {name: SQL, color: '#bdecf6', value: '80%'}
 - {name: DL/ML, color: '#ffbcaa', value: '70%'}
@@ -106,10 +111,13 @@ skills:
 
 experience-title: Experience
 experience:
-- {name: Junior UX Designer, icon: 'icon-1.png', date: 'Jan 2007 - Feb 2009', organization: 'WEBEX'}
-- {name: UX & UI Designer, icon: 'icon-2.png', date: 'Mar 2009 - Aug 2014', organization: 'AUGMEDIX'}
-- {name: Senior UI Designer, icon: 'icon-3.png', date: 'Sep 2014 - Present', organization: 'THEMEFISHER'}
-- {name: Senior UI Designer, icon: 'icon-3.png', date: 'Sep 2014 - Present', organization: 'THEMEFISHER'}
+- {name: Junior Software Developer, icon: 'icon-2.png', date: 'Jan 2011 - Mar 2013', organization: 'Application'}
+- {name: Senior Software Developer, icon: 'icon-2.png', date: 'Apr 2013 - Jul 2015', organization: 'Application'}
+- {name: UX & UI Designer, icon: 'icon-1.png', date: 'Aug 2015 - Dec 2016', organization: 'Web'}
+- {name: Senior Software Developer, icon: 'icon-2.png', date: 'Jan 2017 - Sep 2017', organization: 'Web'}
+- {name: Senior Software Developer, icon: 'icon-3.png', date: 'Oct 2018 - May 2019', organization: 'OCR Solution'}
+- {name: Senior Software Developer, icon: 'icon-3.png', date: 'Jul 2019 - Oct 2019', organization: 'Database Solution'}
+- {name: Senior Software Developer, icon: 'icon-3.png', date: 'Jan 2020 - Nov 2020', organization: 'RPA Solution'}
 
 
 #-------------------------------
