@@ -12,7 +12,7 @@ copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.c
 
 menu:
 - {name: About, link: '/about'}
-#- {name: Blog, link: '/blog'}
+- {name: Blog, link: '/blog'}
 - {name: Portfolio, link: '/portfolio'}
 - {name: Contact, link: '/contact'}
 
@@ -163,7 +163,7 @@ portfolio-home-items:
     url: "#"
     
   - image : "assets/images/portfolio/item-2.png"
-    url: site.baseurl
+    url: "2017/05/26/amazon-increase-income-1.5-million-copy-3"
     
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
