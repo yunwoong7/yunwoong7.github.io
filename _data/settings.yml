@@ -210,7 +210,7 @@ portfolio-items:
      - type: "machineLearning"
       
   - image : "assets/images/portfolio/item-2.png"
-    url: "#"
+    url: "2017/05/26/amazon-increase-income-1.5-million-copy-6"
     portfolio-type:
       - type: "deeplearning"
       
