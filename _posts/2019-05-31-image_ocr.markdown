@@ -1,0 +1,88 @@
+---
+layout: portfolio
+title:  Image OCR
+date:   2019-05-31 10:10:07 +0300
+image:  /assets/images/item/item-2.jpg
+author: Yunwoong Kim
+tags:   OCR
+---
+
+<img width="80" src="/assets/images/icons/ocr_main.ico" align="left"  margin=0,15px,15px,0;></img>
+# Image OCR 
+***
+>* **New_Image_Ocr_0.5.1.py**  # source code for the Main GUI
+>* res_rc.py # pyqt Resource File
+>
+>- **swingOcr.py**
+>- **config.ini**             # config file
+>- *libs/* 
+>>* **ocrImage.py**           # OCR Image Class
+>>- *classification/*
+>>>* **classificationDialog.py** # source code for the Classification Dialog Widget GUI
+>>>* **classify.py**           # Image document classification
+>>>* **VGGNET_adam_ocr_classification.modell**             # classification model
+>>>* **VGGNET_adam_ocr_classification.pickle**            # classification labels
+>>* **modifiedImage.py**           # Modified Image Class
+>>- *preprocessing/*
+>>>* **preprocessing.py**      # Image preprocessing
+>>- *detection/*
+>>>* **detection_landmark.py**          # detect via landmark
+>>>* **guideImage.py**
+>>>- *landmark/*
+>>>>* **landmark.ini**
+>>>>* **doc_fc_name.py**                # Family certificate document (Name)
+>>>>* **doc_rr_nameTitle.py**           # Resident registration document (Name Title)
+>>>>* **doc_rr_name.py**                # Resident registration document (Name)
+>>>* **segmentation.py**
+>>- *recognition/*
+>>>* **recognitionTesseract.py**    # text recognition
+>>>- *Tesseract-OCR/*        # tesseract installation directory
+>
+>- *UI/*                   # direcotry for the UI (pyqt UI, icon image..)
+>>- *icon/*
+>>* NewImageOcr_0.5.1.ui
+>>* DetectionField_0.1.1.ui
+>>* NewImageOcr_0.5.1.ui
+>>* Preprocessing_0.1.1.ui
+>>* **canvas.py**                        
+>>* **labelDialog.py**                  # source code for the Select Label Dialog Widget
+>>* **preprocessingDialog.py**          # source code for the Preprocessing Dialog Widget
+>>* **detectionFieldDialog.py**         # source code for the Detection Dialog Widget
+>>* **lib.py**
+>>* **shape.py**
+>>* **ustr.py**
+>
+>- *result/*               # direcotry for the Ocr results
+>- sol_csv/              # directory for scoring
+>
+>
+* * *
+> **Class OcrImage**
+>>- Orinal Image (원본이미지)
+>>- Four Point Transform Image (4개 꼭지점 기준으로 왜곡시킨 이미지)
+>>- Deskewing Image (기울기 보정 이미지)
+>>- Auto Crop Image (자동자르기 이미지)
+>>- Resize Image (사이즈조정 이미지)
+>>- Remove H Line Image (가로축 라인제거 이미지)
+>>- Remove V Line Image (세로축 라인제거 이미지)
+>>- Denoising Image
+>
+> **Class GuideImage**
+>>- Remove Watermark Image (워터마크 제거 이미지)
+>>- Remove H Line Image (가로축 라인제거 이미지)
+>>- Remove V Line Image (세로축 라인제거 이미지)
+
+## Work Flow
+1. 이미지 파일열기
+2. 자동으로 GrayScale 적용
+3. 자동으로 reSize (pyrUp, pyrDown)
+4. Guide Image Default 적용
+5. Guide Image 수정
+   - morphologyEx, threshold 를 이용하여 Guide Image를 만듬
+6. Character Segment
+   - Guide Image를 통해서 contours 추출
+7. Name Detection
+   - 성명에 해당하는 영역만 별도로 다시 추출
+   - 현재는 좌표, 종횡비등을 이용하여 성명을 판단 (개선 필요)
+8. Character Recognition
+    - Tesseract

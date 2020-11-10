@@ -163,7 +163,7 @@ portfolio-home-items:
     url: "#"
     
   - image : "assets/images/portfolio/item-2.png"
-    url: "2017/05/26/amazon-increase-income-1.5-million-copy-6"
+    url: "2019/05/31/image_ocr"
     
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
@@ -210,7 +210,7 @@ portfolio-items:
      - type: "machineLearning"
       
   - image : "assets/images/portfolio/item-2.png"
-    url: "2017/05/26/amazon-increase-income-1.5-million-copy-6"
+    url: "2019/05/31/image_ocr"
     portfolio-type:
       - type: "deeplearning"
       
