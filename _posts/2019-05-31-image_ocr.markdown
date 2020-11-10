@@ -7,72 +7,8 @@ author: Yunwoong Kim
 tags:   OCR
 ---
 
-<img width="80" src="/assets/images/icons/ocr_main.ico" align="left"  margin=0,15px,15px,0;></img>
+![icon](./assets/images/icons/ocr_main.ico)
 # Image OCR 
-***
->* **New_Image_Ocr_0.5.1.py**  # source code for the Main GUI
->* res_rc.py # pyqt Resource File
->
->- **swingOcr.py**
->- **config.ini**             # config file
->- *libs/* 
->>* **ocrImage.py**           # OCR Image Class
->>- *classification/*
->>>* **classificationDialog.py** # source code for the Classification Dialog Widget GUI
->>>* **classify.py**           # Image document classification
->>>* **VGGNET_adam_ocr_classification.modell**             # classification model
->>>* **VGGNET_adam_ocr_classification.pickle**            # classification labels
->>* **modifiedImage.py**           # Modified Image Class
->>- *preprocessing/*
->>>* **preprocessing.py**      # Image preprocessing
->>- *detection/*
->>>* **detection_landmark.py**          # detect via landmark
->>>* **guideImage.py**
->>>- *landmark/*
->>>>* **landmark.ini**
->>>>* **doc_fc_name.py**                # Family certificate document (Name)
->>>>* **doc_rr_nameTitle.py**           # Resident registration document (Name Title)
->>>>* **doc_rr_name.py**                # Resident registration document (Name)
->>>* **segmentation.py**
->>- *recognition/*
->>>* **recognitionTesseract.py**    # text recognition
->>>- *Tesseract-OCR/*        # tesseract installation directory
->
->- *UI/*                   # direcotry for the UI (pyqt UI, icon image..)
->>- *icon/*
->>* NewImageOcr_0.5.1.ui
->>* DetectionField_0.1.1.ui
->>* NewImageOcr_0.5.1.ui
->>* Preprocessing_0.1.1.ui
->>* **canvas.py**                        
->>* **labelDialog.py**                  # source code for the Select Label Dialog Widget
->>* **preprocessingDialog.py**          # source code for the Preprocessing Dialog Widget
->>* **detectionFieldDialog.py**         # source code for the Detection Dialog Widget
->>* **lib.py**
->>* **shape.py**
->>* **ustr.py**
->
->- *result/*               # direcotry for the Ocr results
->- sol_csv/              # directory for scoring
->
->
-* * *
-> **Class OcrImage**
->>- Orinal Image (원본이미지)
->>- Four Point Transform Image (4개 꼭지점 기준으로 왜곡시킨 이미지)
->>- Deskewing Image (기울기 보정 이미지)
->>- Auto Crop Image (자동자르기 이미지)
->>- Resize Image (사이즈조정 이미지)
->>- Remove H Line Image (가로축 라인제거 이미지)
->>- Remove V Line Image (세로축 라인제거 이미지)
->>- Denoising Image
->
-> **Class GuideImage**
->>- Remove Watermark Image (워터마크 제거 이미지)
->>- Remove H Line Image (가로축 라인제거 이미지)
->>- Remove V Line Image (세로축 라인제거 이미지)
-
-## Work Flow
 1. 이미지 파일열기
 2. 자동으로 GrayScale 적용
 3. 자동으로 reSize (pyrUp, pyrDown)
