@@ -2,7 +2,7 @@
 layout: portfolio
 title:  Image OCR
 date:   2019-05-31 10:10:07 +0300
-image:  /assets/images/item/item-2.jpg
+image:  /assets/images/portfolio/item-2.png
 author: Yunwoong Kim
 tags:   OCR
 ---
