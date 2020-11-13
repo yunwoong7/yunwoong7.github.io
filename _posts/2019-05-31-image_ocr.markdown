@@ -5,16 +5,15 @@ date:   2019-05-31 10:10:07 +0300
 image:  /assets/images/portfolio/item-2.png
 author: Yunwoong Kim
 tags:   OCR
+typora-root-url: ..
 ---
 
-**Image OCR은 Python, Open CV, Tesseract, Keras를 이용하여 문서를 분류하고 원하는 Text 이미지를 추출하여 Text로 인식하는 솔루션입니다.**
+**Image OCR**은 Python, Open CV, Tesseract, Keras를 이용하여 문서를 분류하고 원하는 Text 이미지를 추출하여 Text로 인식하는 솔루션입니다.
+
+![`18.09 벤치마크 결과](/assets/images/portfolio/ocr/benchmark.png)
 
 
-<div class="img_row">
-  <img class="col one" src="/assets/images/portfolio/ocr/benchmark.png" alt="`18.09 벤치마크 결과"/>
-</div>
-
-이미지를 입력 받아서 D/L Model을 기반으로 서식지를 자동분류 *(가족관계증명, 주민등록등본, 기타)* 합니다.
+이미지를 입력 받아서 D/L Model을 기반으로 서식지를 자동으로 분류합니다.  *(가족관계증명, 주민등록등본, 기타)* 
 
 ---
 > 1.이미지 파일열기 <br>
@@ -31,3 +30,4 @@ tags:   OCR
 >   &nbsp;&nbsp;&nbsp;-&nbsp;현재는 좌표, 종횡비등을 이용하여 성명을 판단 (개선 필요) <br>
 >9.Character Recognition <br>
 >   &nbsp;&nbsp;&nbsp;-&nbsp;Tesseract
+
