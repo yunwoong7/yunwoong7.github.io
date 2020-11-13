@@ -16,7 +16,13 @@ OCR에 대한 관심이 높아지면서 연구와 투자가 활발해지면서 �
 
 한글의 인식률이 가장 높은 OCR엔진은 ABBYY 이며 공식 인식률은 98%라고 소개되고 있습니다. 아래 Benchmark 에 소개되는 회사 4개 중 3개의 회사가 ABBYY 엔진을 사용하고 있습니다.
 
-<img src="/assets/images/portfolio/ocr/benchmark.png" alt="`18.09 벤치마크 결과" width=800/>
+
+
+<div class="img_row">
+  <img class="col one" src="/assets/images/portfolio/ocr/benchmark.png"/>
+</div>
+
+
 
 A, B, D사 모두 동일한 ABBYY OCR엔진이지만 다른 인식률이 나왔습니다. 
 
@@ -41,4 +47,30 @@ A, B, D사 모두 동일한 ABBYY OCR엔진이지만 다른 인식률이 나왔�
 >   &nbsp;&nbsp;&nbsp;-&nbsp;현재는 좌표, 종횡비등을 이용하여 성명을 판단 (개선 필요) <br>
 >9.Character Recognition <br>
 >   &nbsp;&nbsp;&nbsp;-&nbsp;Tesseract
+
+
+
+
+
+```bash
+Millennial/
+├── _data                      # Data files
+|  └── settings.yml            # Theme settings and custom text
+├── _includes                  # Theme includes
+├── _layouts                   # Theme layouts (see below for details)
+├── _posts                     # Where all your posts will go
+├── assets                     # Style sheets and images are found here
+|  ├── css                     # Style sheets go here
+|  |  └── _sass                # Folder containing SCSS files
+|  |  └── main.scss            # Main SCSS file
+|  |  └── syntax.css           # Style sheet for code syntax highlighting
+|  └── img                     # Images go here
+├── pages                      # Category pages
+├── _config.yml                # Site build settings
+├── Gemfile                    # Ruby Gemfile for managing Jekyll plugins
+├── index.md                   # Home page
+├── LICENSE.md                 # License for this theme
+├── README.md                  # Includes all of the documentation for this theme
+└── rss-feed.xml               # Generates RSS 2.0 file which Jekyll points to
+```
 
