@@ -16,7 +16,7 @@ OCR에 대한 관심이 높아지면서 연구와 투자가 활발해지면서 �
 
 한글의 인식률이 가장 높은 OCR엔진은 ABBYY 이며 공식 인식률은 98%라고 소개되고 있습니다. 아래 Benchmark 에 소개되는 회사 4개 중 3개의 회사가 ABBYY 엔진을 사용하고 있습니다.
 
-<img src="/assets/images/portfolio/ocr/benchmark.png" alt="`18.09 벤치마크 결과"/>
+<img src="/assets/images/portfolio/ocr/benchmark.png" alt="`18.09 벤치마크 결과" width=800/>
 
 A, B, D사 모두 동일한 ABBYY OCR엔진이지만 다른 인식률이 나왔습니다. 
 
