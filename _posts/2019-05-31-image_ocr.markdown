@@ -4,13 +4,24 @@ title:  Image OCR
 date:   2019-05-31 10:10:07 +0300
 image:  /assets/images/portfolio/item-2.png
 author: Yunwoong Kim
-tags:   OCR
+tags:   ["OCR", "OPTICAL CHARACTER RECOGNITION", "DEEPLEARNING"]
 typora-root-url: ..
 ---
 
-**Image OCR**은 Python, Open CV, Tesseract, Keras를 이용하여 문서를 분류하고 원하는 Text 이미지를 추출하여 Text로 인식하는 솔루션입니다.
+OCR은 입력, 손글씨 또는 인쇄 된 이미지 형태의 텍스트를 조작 할 수있는 기계 인코딩 텍스트 데이터로 치환하는 것입니다. 최근 AI, 자동화(RPA 등) 도입으로 많은 관심을 받고 있습니다. 
+
+OCR에 대한 관심이 높아지면서 연구와 투자가 활발해지면서 인식률이 많이 올라간 상황이지만 여전히 OCR에서 한글의 인식율은 매우 저조합니다. 영어의 경우 글자의 수는 26자(A, B, C....)이지만 한글의 경우 완성형으로 2,350자, 조합형으로는 11,172자이니 학습의 양이 많을 뿐아니라 결과 또한 오인식 될 확율이 높기 때문입니다. 한줄로 쓰는 영어, 서유럽 언어와는 달리 받침이 존재하고 문자 모양이 복잡한 한글의 경우는 이미지 조금만 틀어져도 두줄로 인식 될 수 있어 한글의 인식율은 매우 저조합니다. 
+
+
+
+한글의 인식률이 가장 높은 OCR엔진은 ABBYY 이며 공식 인식률은 98%라고 소개되고 있습니다. 아래 Benchmark 에 소개되는 회사 4개 중 3개의 회사가 ABBYY 엔진을 사용하고 있습니다.
 
 ![`18.09 벤치마크 결과](/assets/images/portfolio/ocr/benchmark.png)
+
+A, B, D사 모두 동일한 ABBYY OCR엔진이지만 다른 인식률이 나왔습니다. 
+
+**Image OCR**은 Python, Open CV, Tesseract, Keras를 이용하여 문서를 분류하고 원하는 Text 이미지를 추출하여 Text로 인식하는 솔루션입니다.
+
 
 
 이미지를 입력 받아서 D/L Model을 기반으로 서식지를 자동으로 분류합니다.  *(가족관계증명, 주민등록등본, 기타)* 
