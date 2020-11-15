@@ -26,7 +26,11 @@ OCR에 대한 관심이 높아지면서 연구와 투자가 활발해지면서 �
   <img class="col one" src="/assets/images/portfolio/ocr/benchmark.png"/>
 </div>
 
-C사는 자체 개발한 Deep Learning 모델로 OCR을 수행했고 A, B, D사 모두 동일한 ABBYY OCR엔진이지만 다른 인식률이 나왔습니다. 
+C사는 자체 개발한 Deep Learning 모델로 OCR을 수행했고 A, B, D사 모두 동일한 ABBYY OCR엔진이지만 다른 인식률이 나왔고 전체적으로 낮은 인식률로 사업이 불가능하다고 타사 솔루션으로는 판단되었고 **자체 솔루션을 개발**하게 되었습니다.
+
+OCR엔진은 Tesseract 오픈소스를 사용하였습니다. Tesseract는 2005년에 오픈 소스로 출시되었고  2015년 업데이트 이후 현재 100개 이상의 언어를 지원하고 있습니다. 하지만 Tesseract 역시 한글에 대한 인식률은 낮은편이며 자체 테스트 시 낱글자 인식률은 대략 60% 미만으로 측정되었습니다. 이렇게 낮은 Tesseract OCR엔진으로 개발한 솔루션이 어떻게 90%가 넘을 수 있었는지 설명드리도록 하겠습니다. 
+
+
 
 **Image OCR**은 Python, Open CV, Tesseract, Keras를 이용하여 문서를 분류하고 원하는 Text 이미지를 추출하여 Text로 인식하는 솔루션입니다.
 

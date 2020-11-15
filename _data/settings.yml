@@ -163,7 +163,7 @@ portfolio-home-items:
     url: "#"
     
   - image : "assets/images/portfolio/item-2.png"
-    url: "2019/05/31/image_ocr"
+    url: "projects/2019/05/31/2019-05-31-image_ocr.markdown"
     
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
