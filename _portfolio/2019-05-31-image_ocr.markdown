@@ -1,5 +1,5 @@
 ---
-layout: portfolio
+layout: post
 title:  Image OCR
 date:   2019-05-31 10:10:07 +0300
 image:  /assets/images/portfolio/item-2.png
