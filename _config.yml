@@ -18,17 +18,15 @@ defaults:
     values:
       permalink: /:basename:output_ext
 
-  # _portfolio
   - scope:
-      path: ""
-      type: portfolio
+      path: ''
+      type: portfolios
     values:
-      layout: single
-      author_profile: false
-      share: true
+      layout: portfolio
+
 
 collections:
-  portfolio:
+  portfolios:
     output: true
     permalink: /:collection/:path/
 
