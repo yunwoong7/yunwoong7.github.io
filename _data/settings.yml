@@ -162,7 +162,7 @@ portfolio-home-items:
   - image : "assets/images/portfolio/item-1.png"
     url: "#"
     
-  - image : "assets/images/portfolio/item-2.png"
+  - image : "assets/images/portfolio/ocr.png"
     url: "portfolio/2019-05-31-image_ocr"
     
   - image : "assets/images/portfolio/item-3.png"
@@ -209,8 +209,8 @@ portfolio-items:
      - type: "rpa"
      - type: "machineLearning"
       
-  - image : "assets/images/portfolio/item-2.png"
-    url: "2019/05/31/image_ocr"
+  - image : "assets/images/portfolio/ocr.png"
+    url: "portfolio/2019-05-31-image_ocr"
     portfolio-type:
       - type: "deeplearning"
       

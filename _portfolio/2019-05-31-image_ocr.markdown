@@ -2,13 +2,11 @@
 layout: portfolio
 title:  Image OCR
 date:   2019-05-31 10:10:07 +0300
-image:  /assets/images/portfolio/item-2.png
+image:  /assets/images/portfolio/ocr.png
 author: Yunwoong Kim
 tags:   ["OCR", "OPTICAL CHARACTER RECOGNITION", "DEEPLEARNING"]
 typora-root-url: ..
 ---
-
-### OCR ?
 
 OCR은 입력, 손글씨 또는 인쇄 된 이미지 형태의 텍스트를 조작 할 수있는 기계 인코딩 텍스트 데이터로 치환하는 것입니다. 최근 AI, 자동화(RPA 등) 도입으로 많은 관심을 받고 있습니다. 
 
@@ -25,6 +23,9 @@ OCR에 대한 관심이 높아지면서 연구와 투자가 활발해지면서 �
 <div class="img_row">
   <img class="col one" src="/assets/images/portfolio/ocr/benchmark.png"/>
 </div>
+
+
+
 
 C사는 자체 개발한 Deep Learning 모델로 OCR을 수행했고 A, B, D사 모두 동일한 ABBYY OCR엔진이지만 다른 인식률이 나왔고 전체적으로 낮은 인식률로 사업이 불가능하다고 타사 솔루션으로는 판단되었고 **자체 솔루션을 개발**하게 되었습니다.
 
