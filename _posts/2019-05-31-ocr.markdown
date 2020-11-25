@@ -1,6 +1,6 @@
 ---
-layout: portfolio
-title:  Image OCR
+layout: post
+title:  OCR
 date:   2019-05-31 10:10:07 +0300
 image:  /assets/images/blog/post-ocr.jpg
 author: Yunwoong Kim
@@ -12,7 +12,7 @@ OCR은 입력, 손글씨 또는 인쇄 된 이미지 형태의 텍스트를 조�
 
 
 
-### OCR의 품질
+## OCR의 품질
 
 OCR에 대한 관심이 높아지면서 연구와 투자가 활발해지면서 인식률이 많이 올라간 상황이지만 여전히 OCR에서 <u>한글의 인식률은 매우 저조</u>합니다. 영어의 경우 글자의 수는 26자(A, B, C....)이지만 한글의 경우 완성형으로 2,350자, 조합형으로는 11,172자이니 학습의 양이 많을 뿐 아니라 결과 또한 오인식 될 확률이 높기 때문입니다. 한 줄로 쓰는 영어, 서유럽 언어와는 달리 받침이 존재하고 문자 모양이 복잡한 한글의 경우는 이미지 조금만 틀어져도 두 줄로 인식될 수 있어 한글의 인식률은 매우 저조합니다. 
 
@@ -20,7 +20,7 @@ OCR 대상이 종이인 경우 재질의 특성상 구김과 같은 왜곡과 �
 
 
 
-### OCR 솔루션 Benchmark
+## OCR 솔루션 Benchmark
 
 아래 Benchmark에 소개되는 회사 4개 중 3개의 회사가 ABBYY OCR엔진을 사용하고 있었습니다. ABBYY OCR엔진의 한글 공식 인식률은 98%라고 소개되고 있습니다. 98%라는 수치는 낱글자의 OCR 인식률이고 상대적으로 양호한 상태의 문서로 테스트가 진행되었을 때 수치라고 판단됩니다. 
 
@@ -36,7 +36,7 @@ Benchmark 결과를 보면 재미난 사실이 있습니다. C사는 자체 개�
 
 
 
-### OCR엔진 외에도 인식률에 영향을 주는 요인을 개선한다면 ?
+## OCR엔진 외에도 인식률에 영향을 주는 요인을 개선한다면 ?
 
 OCR정확도를 높이기위해 이미지 전처리와 OCR이 수행영역에 대한 식별이 가능하다면 OCR엔진과 무관하게 인식률이 개선 될 수 있다고 판단되어 자체 솔루션 개발을 진행하였습니다.
 
@@ -44,4 +44,4 @@ OCR정확도를 높이기위해 이미지 전처리와 OCR이 수행영역에 �
   <img class="col one" src="/assets/images/portfolio/ocr/benchmark2.png"/>
 </div>
 
- [Computer Vision Image OCR 솔루션 설명페이지로 이동](https://yunwoong7.github.io/portfolio/2019-05-31-image_ocr/) 
+ [>> Computer Vision Image OCR 솔루션 설명페이지로 이동](https://yunwoong7.github.io/portfolio/2019-05-31-image_ocr/) 

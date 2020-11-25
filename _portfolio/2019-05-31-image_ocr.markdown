@@ -8,76 +8,138 @@ tags:   ["OCR", "OPTICAL CHARACTER RECOGNITION", "DEEPLEARNING"]
 typora-root-url: ..
 ---
 
-OCR은 입력, 손글씨 또는 인쇄 된 이미지 형태의 텍스트를 조작 할 수있는 기계 인코딩 텍스트 데이터로 치환하는 것입니다. 최근 AI, 자동화(RPA 등) 도입으로 많은 관심을 받고 있습니다. 
+<h1 align="center">
+  <img src="/assets/images/portfolio/ocr/main.ico"><br/>Image OCR
+</h1>
+
+<h4 align="center">
+  Optical Character Recognition with Python
+</h4>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/python-v3.5-blue.svg"/>
+  <img src="https://img.shields.io/badge/PyQt5-v5.11.3-blue.svg"/>
+  <img src="https://img.shields.io/badge/tensorflow-v1.12.0-blue.svg"/>
+  <img src="https://img.shields.io/badge/Tesseract-v4.0-green.svg"/>
+</div>
+
+<div align="center">
+  <img src="/assets/images/portfolio/ocr/main.png" width="70%">
+</div>
+
+## Description
+
+Python으로 작성되었으며 그래픽 인터페이스에 PyQt를 사용합니다. OCR엔진은 Tesseract 오픈소스를 사용하였습니다. 핵심 기술은 어떠한 OCR엔진을 사용하더라도 높은 인식율을 보장 할 수 있도록 분류하고 이미지를 전처리후 OCR을 수행하려는 범위를 자동으로 추출하는 것입니다.
+
+<img src="/assets/images/portfolio/ocr/gui.png" width="50%" />
+
+<i>Image를 Load하여 OCR결과를 확인하고 분석하기 위한 GUI를 제공</i>
+
+<img src="/assets/images/portfolio/ocr/classfication.png" width="50%" />
+
+<i>이미지가 Load되면 DeepLearning으로 학습된 Model을 통해 자동으로 서식지가 분류</i>
+
+<i>이미지를 입력 받아서 D/L Model을 기반으로 서식지를 자동으로 분류합니다.  *(가족관계증명, 주민등록등본, 기타)* </i>
+
+<img src="/assets/images/portfolio/ocr/preprocessing.gif" width="50%" />
+
+<i>이미지 전처리 </i>(Crop, Rotate, Nose..)
+
+<img src="/assets/images/portfolio/ocr/field_extraction.png" width="50%" />
+
+<i>추출 영역 탐지</i>
+
+<img src="/assets/images/portfolio/ocr/recognition.gif" width="50%" />
+
+<i>인식</i>
 
 
 
-### OCR의 사업화
+## Features
 
-OCR에 대한 관심이 높아지면서 연구와 투자가 활발해지면서 인식률이 많이 올라간 상황이지만 여전히 OCR에서 **한글의 인식율은 매우 저조**합니다. 영어의 경우 글자의 수는 26자(A, B, C....)이지만 한글의 경우 완성형으로 2,350자, 조합형으로는 11,172자이니 학습의 양이 많을 뿐아니라 결과 또한 오인식 될 확율이 높기 때문입니다. 한줄로 쓰는 영어, 서유럽 언어와는 달리 받침이 존재하고 문자 모양이 복잡한 한글의 경우는 이미지 조금만 틀어져도 두줄로 인식 될 수 있어 한글의 인식율은 매우 저조합니다. 
+- [x] 이미지 파일 열기/자동보정
+- [x] Image Classfication (Deeplearning Model)
+- [x] Guide Image 생성 (morphologyEx, threshold 를 이용하여 Guide Image를 만듬)
+- [x] Character Sement (Guide Image를 통해서 contours 추출)
+- [x] Field Detection
+- [x] Character Recognition
+- [ ] Function to improve performance
 
-한글의 인식률이 가장 높은 OCR엔진은 ABBYY 이며 공식 인식률은 98%라고 소개되고 있습니다. 98%라는 인식률은 낱글자의 인식율이고 상대적으로 양호한 상태의 문서로 테스트가 진행되었을때 수치라고 판단됩니다. 
 
-아래 Benchmark 에 소개되는 회사 4개 중 3개의 회사가 ABBYY 엔진을 사용하고 있지만 상당히 낮은 인식율이 나왔습니다. OCR 대상인 가족관계증명서와 등본은 종이 재질로 인해 음영과 명암이 존재했고 테이블과 낙서 등이 있다보니 낱글자 인식률과는 다르게 낮은 인식율이 나왔습니다.
+
+## Requirements
+
+- Ubuntu / macOS / Windows
+- Python2 / Python3
+- PyQt4 / PyQt5 / PySide2
+- Tesseract 4.0
+
+
+
+## Structure
+
+```bash
+Image_OCR/
+├── libs/         
+|  └── ocrImage.py                              # OCR Image Class
+|  └── modifiedImage.py                         # Modified Image Class
+|  └── classification/
+|  |  └── classificationDialog.py               # source code for the Classification
+|  |  └── classify.py                           # Image document classification
+|  |  └── VGGNET_adam_ocr_classification.model  # classification model
+|  |  └── VGGNET_adam_ocr_classification.pickle # classification labels
+|  └── preprocessing/
+|  |  └── preprocessing.py                      # Image preprocessing
+|  └── detection/
+|  |  └── detection_landmark.py                 # detect via landmark
+|  |  └── guideImage.py                         # Guide Image Class
+|  |  └── segmentation.py                       # Segmentation Image Class
+|  |  └── landmark/
+|  |  |  └── landmark.ini                       # landmark file
+|  |  |  └── doc_fc_name.py                     # Family certificate document (Name)
+|  |  |  └── doc_rr_nameTitle.py                # Resident registration document (Title)
+|  |  |  └── doc_rr_nameTitle.py                # Resident registration document (Name)
+|  └── recognition/
+|  |  └── recognitionTesseract.py               # text recognition
+|  |  └── Tesseract-OCR/                        # tesseract installation directory
+├── UI/
+|  └── icon/
+|  └── NewImageOcr_0.5.1.ui
+|  └── DetectionField_0.1.1.ui
+|  └── NewImageOcr_0.5.1.ui
+|  └── Preprocessing_0.1.1.ui
+|  └── canvas.py
+|  └── labelDialog.py
+|  └── preprocessingDialog.py
+|  └── detectionFieldDialog.py
+|  └── lib.py
+|  └── shape.py
+|  └── ustr.py
+├── result/                                      # direcotry for the Ocr results
+├── sol_csv/                                     # directory for scoring
+├── New_Image_Ocr_0.5.1.py                       # source code for the Main GUI
+├── res_rc.py                                    # pyqt Resource File
+└── config.ini                                   # config file
+```
+
+
+
+## 외부(OCR) 솔루션과 비교해도 경쟁력이 있을까?
 
 <div class="img_row">
-  <img class="col one" src="/assets/images/portfolio/ocr/benchmark.png"/>
+  <img class="col one" src="/assets/images/portfolio/ocr/compare.png"/>
 </div>
 
 
 
+### Use Case (실 적용 사례)
 
-C사는 자체 개발한 Deep Learning 모델로 OCR을 수행했고 A, B, D사 모두 동일한 ABBYY OCR엔진이지만 다른 인식률이 나왔고 전체적으로 낮은 인식률로 사업이 불가능하다고 타사 솔루션으로는 판단되었고 **자체 솔루션을 개발**하게 되었습니다.
+<div class="img_row">
+  <img class="col one" src="/assets/images/portfolio/ocr/use_case1.png"/>
+</div>
 
-OCR엔진은 Tesseract 오픈소스를 사용하였습니다. Tesseract는 2005년에 오픈 소스로 출시되었고  2015년 업데이트 이후 현재 100개 이상의 언어를 지원하고 있습니다. 하지만 Tesseract 역시 한글에 대한 인식률은 낮은편이며 자체 테스트 시 낱글자 인식률은 대략 60% 미만으로 측정되었습니다. 이렇게 낮은 Tesseract OCR엔진으로 개발한 솔루션이 어떻게 90%가 넘을 수 있었는지 설명드리도록 하겠습니다. 
+#### 자동화 적용 효과
 
-
-
-**Image OCR**은 Python, Open CV, Tesseract, Keras를 이용하여 문서를 분류하고 원하는 Text 이미지를 추출하여 Text로 인식하는 솔루션입니다.
-
-
-
-이미지를 입력 받아서 D/L Model을 기반으로 서식지를 자동으로 분류합니다.  *(가족관계증명, 주민등록등본, 기타)* 
-
----
-> 1.이미지 파일열기 <br>
-> 2.서식지분류 (Deeplearning Model) <br>
-> 3.자동으로 GrayScale 적용 <br>
-> 4.자동으로 reSize (pyrUp, pyrDown) <br>
-> 5.Guide Image Default 적용 <br>
-> 6.Guide Image 수정 <br>
->   &nbsp;&nbsp;&nbsp;-&nbsp;morphologyEx, threshold 를 이용하여 Guide Image를 만듬
->7.Character Segment <br>
->   &nbsp;&nbsp;&nbsp;-&nbsp;Guide Image를 통해서 contours 추출 <br>
->8.Name Detection <br>
->   &nbsp;&nbsp;&nbsp;-&nbsp;성명에 해당하는 영역만 별도로 다시 추출 <br>
->   &nbsp;&nbsp;&nbsp;-&nbsp;현재는 좌표, 종횡비등을 이용하여 성명을 판단 (개선 필요) <br>
->9.Character Recognition <br>
->   &nbsp;&nbsp;&nbsp;-&nbsp;Tesseract
-
-
-
-
-
-```bash
-Millennial/
-├── _data                      # Data files
-|  └── settings.yml            # Theme settings and custom text
-├── _includes                  # Theme includes
-├── _layouts                   # Theme layouts (see below for details)
-├── _posts                     # Where all your posts will go
-├── assets                     # Style sheets and images are found here
-|  ├── css                     # Style sheets go here
-|  |  └── _sass                # Folder containing SCSS files
-|  |  └── main.scss            # Main SCSS file
-|  |  └── syntax.css           # Style sheet for code syntax highlighting
-|  └── img                     # Images go here
-├── pages                      # Category pages
-├── _config.yml                # Site build settings
-├── Gemfile                    # Ruby Gemfile for managing Jekyll plugins
-├── index.md                   # Home page
-├── LICENSE.md                 # License for this theme
-├── README.md                  # Includes all of the documentation for this theme
-└── rss-feed.xml               # Generates RSS 2.0 file which Jekyll points to
-```
-
+1. 심사 업무량 30% 이상 감소
+2. 실시간 결합 심사 처리로 불필요한 할인 비용 감소 (연간 1.8억)
+3. 심사 자동화로 수수료 감소 (연간 2.3억)
