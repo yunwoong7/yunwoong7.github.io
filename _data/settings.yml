@@ -159,8 +159,8 @@ experience:
 
 # Portfolio Home Section
 portfolio-home-items:
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+  - image : "assets/images/portfolio/ReST.png"
+    url: "portfolio/2020-11-25-ReST"
     
   - image : "assets/images/portfolio/ocr.png"
     url: "portfolio/2019-05-31-image_ocr"
