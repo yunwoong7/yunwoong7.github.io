@@ -190,6 +190,10 @@ portfolio-label:
     type : "machineLearning"
   }
 - {
+    title : "OCR",
+    type : "ocr"
+  }
+- {
     title : "Face Applications",
     type : "face"
   }
@@ -203,8 +207,8 @@ portfolio-label:
   }
 
 portfolio-items:
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+  - image : "assets/images/portfolio/ReST.png"
+    url: "portfolio/2020-11-25-ReST"
     portfolio-type:
      - type: "rpa"
      - type: "machineLearning"
@@ -212,6 +216,8 @@ portfolio-items:
   - image : "assets/images/portfolio/ocr.png"
     url: "portfolio/2019-05-31-image_ocr"
     portfolio-type:
+      - type: "ocr"
+      - type: "machineLearning"
       - type: "deeplearning"
       
   - image : "assets/images/portfolio/item-3.png"
