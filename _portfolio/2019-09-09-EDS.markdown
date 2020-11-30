@@ -1,0 +1,34 @@
+---
+layout: portfolio
+title:  ReST
+date:   2020-11-25 13:20:14 +0300
+image:  /assets/images/portfolio/ReST.png
+author: Yunwoong Kim
+tags:   ["RPA"]
+typora-root-url: ..
+---
+
+<h1 align="center">
+  <img src="/assets/images/portfolio/ReST/auto_test_main.ico"><br/>ReST
+</h1>
+
+<h4 align="center">
+  The RPA Solution that accelerates your digital transformation
+</h4>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/python-v3.7-blue.svg"/>
+  <img src="https://img.shields.io/badge/PyQt5-v5.14.1-blue.svg"/>
+  <img src="https://img.shields.io/badge/Pandas-v1.0.3-blue.svg"/>
+  <img src="https://img.shields.io/badge/requests-v2.23.0-blue.svg"/>
+  <img src="https://img.shields.io/badge/selenium-v3.141.0-blue.svg"/>
+</div>
+
+<div align="center">
+  <img src="/assets/images/portfolio/ReST/performance.gif" width="70%">
+</div>
+
+
+## Description
+
+ReST Studio는 SK Holdings C&C 고객서비스팀에서 자체 개발한 자동화 솔루션입니다. Transaction, DB, UI Operation을 포함하여 Swing 테스트를 효율적으로 설정, 생성, 실행, 보고 및 관리 할 수 있습니다.

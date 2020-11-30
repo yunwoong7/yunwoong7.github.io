@@ -31,27 +31,150 @@ typora-root-url: ..
 
 Python으로 작성되었으며 그래픽 인터페이스에 PyQt를 사용합니다. OCR엔진은 Tesseract 오픈소스를 사용하였습니다. 핵심 기술은 어떠한 OCR엔진을 사용하더라도 높은 인식율을 보장 할 수 있도록 분류하고 이미지를 전처리후 OCR을 수행하려는 범위를 자동으로 추출하는 것입니다.
 
-<img src="/assets/images/portfolio/ocr/gui.png" width="50%" />
+<img src="/assets/images/portfolio/ocr/gui.png" width="100%" />
 
-<i>Image를 Load하여 OCR결과를 확인하고 분석하기 위한 GUI를 제공</i>
+<i>Image를 Load하여 OCR결과를 확인하고 분석하기 위한 GUI를 제공</i><br>
 
-<img src="/assets/images/portfolio/ocr/classfication.png" width="50%" />
+
+
+------
+
+<img src="/assets/images/portfolio/ocr/classfication.png" width="100%" />
 
 <i>이미지가 Load되면 DeepLearning으로 학습된 Model을 통해 자동으로 서식지가 분류</i>
 
-<i>이미지를 입력 받아서 D/L Model을 기반으로 서식지를 자동으로 분류합니다.  *(가족관계증명, 주민등록등본, 기타)* </i>
+<i>이미지를 입력 받아서 D/L Model을 기반으로 서식지를 자동으로 분류합니다.  *(가족관계증명, 주민등록등본, 기타)* </i><br>
 
-<img src="/assets/images/portfolio/ocr/preprocessing.gif" width="50%" />
+
+
+------
+
+<img src="/assets/images/portfolio/ocr/preprocessing.gif" width="100%" />
 
 <i>이미지 전처리 </i>(Crop, Rotate, Nose..)
 
-<img src="/assets/images/portfolio/ocr/field_extraction.png" width="50%" />
+> 이미지의 기울기를 보정
+>
+> - 왜곡(낙서, 구김, 빛등)으로 인해 기울기에 영향이 생길 수 있어 입력한 angle 값 이하는 보정하지 않음
+
+```python
+# gubun :** 'Image Deskewing'
+# angle :** Skip below the entered angle
+    
+option = [{'gubun': 'Image Deskewing', 'angle': 1}]
+ocrImg.modImg.addImgApplyList(option)
+ocrImg.modImg.imgCompareShow()
+```
+
+<img src="/assets/images/portfolio/ocr/preprocessing_1.png" width="100%" />
+
+> 이미지 자동 자르기
+>
+> - 이미지에서 불필요한 영역 자르기
+
+```python
+# gubun : Image Autocrop
+# aspectRatio :입력된 aspect ratio(종횡비) 보다 낮은 경우 화질이 좋지 못해서 Cutting 영역을 잡을 수 없기때문에 Skip 처리함
+# threshold1 : Hysteresis Thredsholding 작업에서의 min 값
+# threshold2 : Hysteresis Thredsholding 작업에서의 max 값
+
+option = [{'gubun': 'Image Autocrop', 'aspectRatio': 0.8, 'threshold1': 100, 'threshold2': 100}]
+ocrImg.modImg.addImgApplyList(option)
+ocrImg.modImg.imgCompareShow()
+```
+
+<img src="/assets/images/portfolio/ocr/preprocessing_2.png" width="100%" />
+
+> 워터마크 제거
+
+```python
+option = [{'gubun': 'Remove Watermark', 'alpha': 2.0, 'beta':220}]
+ocrImg.modImg.addImgApplyList(option)
+ocrImg.modImg.imgCompareShow()
+```
+
+<img src="/assets/images/portfolio/ocr/preprocessing_3.png" width="100%" />
+
+> 이미지 사이즈 조정
+>
+> - cv2.pyrDown() 과 cv2.pyrUp() 함수를 사용하여 이미지를 축소, 확장
+>   - 가장 아래에 가장 큰 해상도를 놓고 점점 줄여가면서 쌓아가는 형태
+
+```python
+# gubun : Image Resize
+# resizeCl : resize 구분값 (pyrDown, pyrUp, Auto)
+    
+option = [{'gubun': 'Image Resize', 'resizeCl':'Auto'}]
+ocrImg.modImg.addImgApplyList(option)
+ocrImg.modImg.imgCompareShow()
+```
+
+<img src="/assets/images/portfolio/ocr/preprocessing_4.png" width="100%" />
+
+> 가로축, 세로축 라인 제거
+
+```python
+option = [{'gubun': 'Image RemoveHLine', 'horizontalsize': 30}]
+ocrImg.modImg.addImgApplyList(option)
+ocrImg.modImg.imgCompareShow()
+
+option = [{'gubun': 'Image RemoveVLine', 'verticalsize': 50}]
+ocrImg.modImg.addImgApplyList(option)
+ocrImg.modImg.imgCompareShow()
+```
+
+<img src="/assets/images/portfolio/ocr/preprocessing_5.png" width="100%" />
+
+------
+
+<img src="/assets/images/portfolio/ocr/field_extraction.png" width="100%" />
 
 <i>추출 영역 탐지</i>
 
-<img src="/assets/images/portfolio/ocr/recognition.gif" width="50%" />
+> 가이드 이미지를 생성하여 원하는 영역을 추출
+
+```python
+ocrImg.detectionField.segmentation(findFieldInfo=fieldInfo, flag='WHY')
+ocrImg.detectionField.imgShow(field='name', debug=False)
+
+ocrImg.addDetectionImg(fieldInfo=fieldInfo)
+ocrImg.detectionField.imgShow(field='birth')
+```
+
+<img src="/assets/images/portfolio/ocr/field_extraction_1.png" width="100%" />
+
+<img src="/assets/images/portfolio/ocr/field_extraction_2.png" width="100%" />
+
+> 찾아낸 영역을 추출하여 하나의 이미지로 병합
+
+```python
+ocrImg.detectionField.cropImgShow(field='name')
+ocrImg.detectionField.cropMergeImgShow(field='name')
+```
+
+<img src="/assets/images/portfolio/ocr/field_extraction_3.png" width="100%" />
+
+------
+
+<img src="/assets/images/portfolio/ocr/recognition.gif" width="100%" />
 
 <i>인식</i>
+
+> 인식은 Tesseract OCR 엔진을 사용하며 N개의 프로세스로 수행이 가능
+
+```python
+ocrImg.recogTesserOCR(field='name', imgType='cropMergeImg', segmode='-psm 6', ocrmode='kor', process='01', gray=False)
+```
+
+```python
+ocrImg.recogResult
+
+[{'field': 'name', 'result': ['이희', '이학승', '정정옥', '성기복', '성광현', '성현선', '성상현']}]
+```
+
+<img src="/assets/images/portfolio/ocr/another.png" width="100%" />
+
+<i>다른 서식의 문서도 가능</i>
 
 
 
