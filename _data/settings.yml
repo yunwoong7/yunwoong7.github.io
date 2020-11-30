@@ -165,8 +165,8 @@ portfolio-home-items:
   - image : "assets/images/portfolio/ocr.png"
     url: "portfolio/2019-05-31-image_ocr"
     
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
+  - image : "assets/images/portfolio/EDS.png"
+    url: "portfolio/2019-09-09-EDS"
     
   - image : "assets/images/portfolio/item-4.png"
     url: "#"
@@ -194,6 +194,10 @@ portfolio-label:
     type : "ocr"
   }
 - {
+    title : "DataBase",
+    type : "db"
+  }
+- {
     title : "Face Applications",
     type : "face"
   }
@@ -219,11 +223,13 @@ portfolio-items:
       - type: "ocr"
       - type: "machineLearning"
       - type: "deeplearning"
+      - type: "rpa"
       
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
+  - image : "assets/images/portfolio/EDS.png"
+    url: "portfolio/2019-09-09-EDS"
     portfolio-type:
-      - type: "machineLearning"
+      - type: "rpa"
+      - type: "db"
       
   - image : "assets/images/portfolio/item-6.png"
     url: "#"
