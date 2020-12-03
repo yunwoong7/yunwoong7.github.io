@@ -168,7 +168,7 @@ portfolio-home-items:
   - image : "assets/images/portfolio/EDS.png"
     url: "portfolio/2019-09-09-EDS"
     
-  - image : "assets/images/portfolio/item-4.png"
+  - image : "assets/images/portfolio/face_mask_detector.png"
     url: "#"
     
   - image : "assets/images/portfolio/item-5.png"
@@ -231,11 +231,12 @@ portfolio-items:
       - type: "rpa"
       - type: "db"
       
-  - image : "assets/images/portfolio/item-6.png"
+  - image : "assets/images/portfolio/face_mask_detector.png"
     url: "#"
     portfolio-type:
-      - type: "rpa"
       - type: "deeplearning"
+      - type: "face"
+      - type: "detection"
       
   - image : "assets/images/portfolio/item-8.png"
     url: "#"
