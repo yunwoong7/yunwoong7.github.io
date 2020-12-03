@@ -169,7 +169,7 @@ portfolio-home-items:
     url: "portfolio/2019-09-09-EDS"
     
   - image : "assets/images/portfolio/face_mask_detector.png"
-    url: "#"
+    url: "portfolio/2020-06-08-face_mask_detector"
     
   - image : "assets/images/portfolio/item-5.png"
     url: "#"
@@ -232,7 +232,7 @@ portfolio-items:
       - type: "db"
       
   - image : "assets/images/portfolio/face_mask_detector.png"
-    url: "#"
+    url: "portfolio/2020-06-08-face_mask_detector"
     portfolio-type:
       - type: "deeplearning"
       - type: "face"
