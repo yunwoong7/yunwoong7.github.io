@@ -2,7 +2,7 @@
 layout: portfolio
 title:  Image OCR
 date:   2019-05-31 10:10:07 +0300
-image:  /assets/images/portfolio/ocr.png
+image:  /assets/images/portfolio/ocr/ocr.png
 author: Yunwoong Kim
 tags:   ["OCR", "OPTICAL CHARACTER RECOGNITION", "DEEPLEARNING"]
 typora-root-url: ..
