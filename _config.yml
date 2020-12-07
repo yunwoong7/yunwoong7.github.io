@@ -11,6 +11,11 @@ compress_html:
   comments: all
   startings: [html, head, body]
 
+# Markdown Processing
+kramdown:
+  input: GFM
+  coderay_default_lang: True
+
 # Pages Path
 defaults:
   - scope:
