@@ -170,8 +170,8 @@ portfolio-home-items:
   - image : "assets/images/portfolio/face_mask_detector.png"
     url: "portfolio/2020-06-08-face_mask_detector"
     
-  - image : "assets/images/portfolio/item-5.png"
-    url: "#"
+  - image : "drowsiness_detection.png"
+    url: "portfolio/2019-06-10-drowsiness_detection"
 
 
 # Portfolio Page
@@ -242,10 +242,12 @@ portfolio-items:
     portfolio-type:
       - type: "machineLearning"
       
-  - image : "assets/images/portfolio/item-5.png"
-    url: "#"
+  - image : "drowsiness_detection.png"
+    url: "portfolio/2019-06-10-drowsiness_detection"
     portfolio-type:
-      - type: "rpa"
+      - type: "deeplearning"
+      - type: "face"
+      - type: "detection"
       
   - image : "assets/images/portfolio/item-1.png"
     url: "#"
