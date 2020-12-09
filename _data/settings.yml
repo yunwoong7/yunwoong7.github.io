@@ -5,7 +5,7 @@ title: Yunwoong's Blog
 logo: 
 author: yunwoong Kim
 description: this is meta description
-email: yunwoong7@gmail.com
+email: myybnenz
 phone: +82 010 4126 2003
 address: 71-18, Gugal-ro, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
@@ -42,7 +42,7 @@ hero:
 social:
 - {icon: "ti-facebook", link: "#"}
 - {icon: "ti-instagram", link: "#"}
-- {icon: "ti-dribbble", link: "#"}
+- {icon: "ti-github", link: "#"}
 - {icon: "ti-linkedin", link: "https://www.linkedin.com/in/윤웅-김-17832919a/"}
 
 #-------------------------------

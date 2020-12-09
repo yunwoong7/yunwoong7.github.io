@@ -3,6 +3,7 @@ url: "https://yunwoong7.github.io" # the base hostname & protocol for your site,
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 permalink: pretty
 plugins:
   - jekyll-sitemap
@@ -14,6 +15,7 @@ compress_html:
 # Markdown Processing
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
 
 # Pages Path
 defaults:
