@@ -2,7 +2,7 @@
 layout: portfolio
 title:  Face Mask Detector
 date:   2019-06-10 15:11:43 +0300
-image:  /assets/images/portfolio/drowsiness_detection.png
+image:  /assets/images/portfolio/drowsiness_detection/drowsiness_detection.png
 author: Yunwoong Kim
 tags:   ["detection"]
 typora-root-url: ..
@@ -38,7 +38,7 @@ OpenCV, Keras / TensorFlow 및 Deep Learning으로 자동차 운전자가 피곤
 
 1. 연속 영상에서 얼굴을 인식
 
-   <div align="center">
+   <div align="left">
      <img src="/assets/images/portfolio/drowsiness_detection/drowsiness_detection_2.gif" width="70%">
    </div>
 
@@ -46,7 +46,7 @@ OpenCV, Keras / TensorFlow 및 Deep Learning으로 자동차 운전자가 피곤
 
 2. 얼굴 Landmark를 적용하여 눈, 코, 입등을 국소화
 
-   <div align="center">
+   <div align="left">
      <img src="/assets/images/portfolio/drowsiness_detection/drowsiness_detection_3.gif" width="70%">
    </div>
 
@@ -54,7 +54,7 @@ OpenCV, Keras / TensorFlow 및 Deep Learning으로 자동차 운전자가 피곤
 
 3. 눈 영역을 추출
 
-   <div align="center">
+   <div align="left">
      <img src="/assets/images/portfolio/drowsiness_detection/drowsiness_detection_4.gif" width="70%">
    </div>
 
@@ -64,7 +64,7 @@ OpenCV, Keras / TensorFlow 및 Deep Learning으로 자동차 운전자가 피곤
 
 4. 특정시간동안 종횡비가 낮다면 운전자를 깨우기 위한 알람을 표시
 
-<div align="center">
+<div align="left">
   <img src="/assets/images/portfolio/drowsiness_detection/drowsiness_detection_5.gif" width="70%">
 </div>
 

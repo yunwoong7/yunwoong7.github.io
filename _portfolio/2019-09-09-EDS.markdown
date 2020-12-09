@@ -2,7 +2,7 @@
 layout: portfolio
 title:  EDS
 date:   2019-09-09 09:20:22 +0300
-image:  /assets/images/portfolio/EDS.png
+image:  /assets/images/portfolio/EDS/EDS.png
 author: Yunwoong Kim
 tags:   ["RPA"]
 typora-root-url: ..
@@ -21,11 +21,6 @@ typora-root-url: ..
   <img src="https://img.shields.io/badge/PyQt5-v5.11.3-blue.svg"/>
   <img src="https://img.shields.io/badge/cxOracle-v7.1.0-blue.svg"/>
   <img src="https://img.shields.io/badge/pandas-v0.23.4-blue.svg"/>
-</div>
-
-
-<div align="center">
-  <img src="/assets/images/portfolio/ReST/performance.gif" width="70%">
 </div>
 
 
