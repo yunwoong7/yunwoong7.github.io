@@ -5,9 +5,11 @@ date:   2020-04-03 15:05:55 +0300
 image:  /assets/images/blog/covid_global_challenges.png
 author: Yunwoong Kim
 tags:   COVID
+typora-root-url: ..
 ---
 
 # corona
+
 코로나19 이후, 즉 포스트 코로나(Post COVID-19) 시대의 세상은 지금과 완전히 다를 것입니다. 
 
 이미 각 국가의 고강도 사회적 거리두기 정책으로 인해 보금자리였던 집이 또 하나의 업무 공간으로 탈바꿈하였으며, 오프라인 사회에서 온라인 사회로, 나아가 디지털 사회로 전환하는 발판을 만들어 주었습니다. 
