@@ -2,7 +2,6 @@
 layout: portfolio
 title:  Face Mask Detector
 date:   2019-06-10 15:11:43 +0300
-image:  ..
 author: Yunwoong Kim
 tags:   ["detection"]
 typora-root-url: ..
