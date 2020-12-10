@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  COVID-19: Global Challenges
+title:  COVID-19-Global Challenges
 date:   2020-04-03 15:05:55 +0300
 image:  /assets/images/blog/covid_global_challenges.png
 author: Yunwoong Kim
