@@ -32,3 +32,40 @@ typora-root-url: ..
 ## Description
 
 ReST Studio는 SK Holdings C&C 고객서비스팀에서 자체 개발한 자동화 솔루션입니다. Transaction, DB, UI Operation을 포함하여 Swing 테스트를 효율적으로 설정, 생성, 실행, 보고 및 관리 할 수 있습니다.
+
+
+
+ReST Studio 기능에 대해 알고 익숙해지는데 도움이 될 수 있도록 가이드 및 튜토리얼을 작성하였습니다. 참고하시어 테스트 스크립트를 생성하시기 바랍니다.
+
+- Transaction을 이용한 테스트 자동화 스크립트 생성 시에는 Transaction에 대한 기본적인 이해가 필요하나 보다 쉽게 생성 및 관리 할 수 있도록 다양한 자동화 기능을 제공합니다.
+- 한번 축척된 테스트 케이스는 재사용성이 높습니다.
+- 다량의 테스트 수행이나 Regression 테스트에 활용하기 좋습니다.
+- ReST Studio 를 사용해 볼 수 있도록 몇가지 샘플 Suites을 준비했습니다.
+
+
+
+## 시스템 권장사양 (Environment Requirements)
+
+1. 시스템
+
+   | Operating System | Windows 7, Windows 8, Windows 10                             |
+   | :--------------: | ------------------------------------------------------------ |
+   |       CPU        | *Minimum*: 2 GHz or faster 32-bit (x86) or 64-bit (x64) processor |
+   |      Memory      | ReST Studio*Minimum*: 2 GB RAM (32-bit) or 4 GB RAM (64-bit)*Recommnended*: 4 GB RAM (32-bit) or 8 GB RAM (64-bit). |
+   |    Hard Drive    | At least 1 GB available hard disk space.                     |
+
+2. 브라우저
+
+   | Desktop Browser | Version     |
+   | :-------------- | :---------- |
+   | Chrome          | 56, 65, 79+ |
+
+
+
+# GUI 및 기본설정
+
+ReST Studio 시작 페이지 구성
+
+- Recent Suites : 최근에 수행한 Suites의 이력을 최대 10개까지 노출 (더블 클릭 시 해당 Suites Open)
+- Test Tasks : 빠른 수행을 위해 사용성이 많은 버튼으로 구성 할 예정
+- Studio Info : 간략하게 Studio 정보를 소개하는 페이지로 사용 할 예정 
