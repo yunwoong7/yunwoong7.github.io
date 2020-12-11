@@ -23,10 +23,8 @@ typora-root-url: ..
   <img src="https://img.shields.io/badge/requests-v2.23.0-blue.svg"/>
   <img src="https://img.shields.io/badge/selenium-v3.141.0-blue.svg"/>
 </div>
+[![Video Label](http://img.youtube.com/vi/I6YLTDS6KlM/0.jpg)](https://youtu.be/I6YLTDS6KlM)
 
-<div align="center">
-  <img src="/assets/images/portfolio/ReST/performance.gif" width="70%">
-</div>
 
 
 ## Description
