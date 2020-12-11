@@ -1,0 +1,34 @@
+---
+layout: post
+title:  RPA
+date:   2020-01-20 15:13:11 +0300
+image:  /assets/images/blog/rpa.png
+author: Yunwoong Kim
+tags:   RPA
+typora-root-url: ..
+---
+
+RPA는 로보틱 프로세스 자동화(Robotic Process Automation)의 약자로 물리적인 로봇이 아니라 소프트웨어 로봇이 사람의 업무를 자동으로 대신해주는 소프트웨어라고 생각하시면 쉽습니다.
+
+
+
+## 시장을 주도하는 3가지 솔루션
+
+RPA 시장에는 많은 제품이 있지만, 현재 UiPath, Blue Prism, Automation Anywhere 이렇게 3개의 대표적인 RPA 솔루션이 주도하고 있습니다.
+
+3개의 솔루션 모두 오랜 노하우를 가지고 있으며  다양한 환경에서 사용이 가능하도록 설계되었습니다. 하지만 시장의 저변을 확장하는데 집중하고 있는 범용 솔루션이기때문에 실제 복잡도가 높고 변화가 많은 환경에서는 자동화의 한계가 있음을 알 게 됩니다.
+
+
+
+## 테스트를 목적으로하는 솔루션
+
+전무적인 비지니스 환경에 맞게 테스트를 목적으로 개발하였습니다.
+
+
+
+<div class="img_row">
+  <img class="col one" src="/assets/images/blog/rpa_1.png"/>
+</div>
+
+
+ [>> ReST 솔루션 설명페이지로 이동](https://yunwoong7.github.io/portfolio/2020-11-25-ReST/) 

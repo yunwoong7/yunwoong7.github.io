@@ -135,7 +135,7 @@ services:
 - {
     name: Computer Vision,
     icon: ti-eye,
-    description: 'I am interested in creating systems that autonomously do what the human vision can do.',
+    description: 'I am currently most interested in creating systems that autonomously do what a human vision can do, and I am developing a variety of related programs.',
     active: # Add true to select section
   }
 - {
@@ -145,7 +145,7 @@ services:
     active: true # Add true to select section
   }
 - {
-    name: Data,
+    name: Big Data,
     icon: ti-image,
     description: 'I would like to analyze the complex structured and unstructured data collected and solve many business problems that could not be solved before.',
     active: # Add true to select section
