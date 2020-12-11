@@ -23,9 +23,7 @@ typora-root-url: ..
   <img src="https://img.shields.io/badge/requests-v2.23.0-blue.svg"/>
   <img src="https://img.shields.io/badge/selenium-v3.141.0-blue.svg"/>
 </div>
-[![Video Label](http://img.youtube.com/vi/I6YLTDS6KlM/0.jpg)](https://youtu.be/I6YLTDS6KlM)
-
-
+<a href="https://youtu.be/I6YLTDS6KlM" target="_blank" title="ReST 주요기능" rel="nofollow"><img width="100%" src="/assets/images/portfolio/ReST/ReST_play.png"></a>
 
 ## Description
 
@@ -60,10 +58,46 @@ ReST Studio 기능에 대해 알고 익숙해지는데 도움이 될 수 있도�
 
 
 
-# GUI 및 기본설정
+## GUI 및 기본설정
 
 ReST Studio 시작 페이지 구성
 
 - Recent Suites : 최근에 수행한 Suites의 이력을 최대 10개까지 노출 (더블 클릭 시 해당 Suites Open)
 - Test Tasks : 빠른 수행을 위해 사용성이 많은 버튼으로 구성 할 예정
 - Studio Info : 간략하게 Studio 정보를 소개하는 페이지로 사용 할 예정 
+
+<div align="center">
+  <img src="/assets/images/portfolio/ReST/ReST_GUI_1.png" width="100%">
+</div>
+
+##### Main Toolbar
+
+<div align="left">
+  <img src="/assets/images/portfolio/ReST/ReST_GUI_2.png" width="70%">
+</div>
+
+기본 도구 모음 에는 Suites와 관련된 가장 일반적인 작업이 포함되어 있습니다.
+
+| Action Button                                                | 설명                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| <img class="col one" src="/assets/images/portfolio/ReST/new_suites.png" width="50px"/> | Suites 를 새로 생성 - 신규 Tab 형태로 Suites 추가            |
+| <img class="col one" src="/assets/images/portfolio/ReST/open_suites.png" width="50px"/> | 설명Suites 열기 - (*.att) 파일로 저장되어 있는 Suites 를 불러와 Tab 형태로 추 |
+| <img class="col one" src="/assets/images/portfolio/ReST/save_suites.png" width="50px"/> | Suites 저장 - Suites를 (*.att) 파일로 저장                   |
+| <img class="col one" src="/assets/images/portfolio/ReST/ref.png" width="50px"/> | 참조 데이타 Dialog 화면 활성화 - List, SVC COMBO, SQL, Excel 등의 참조데이타를 관리하기 위한 팝업화면 활성화 |
+| <img class="col one" src="/assets/images/portfolio/ReST/search.png" width="50px"/> | 검색 - Step에서 Target 또는 Data를 검색하여 이동             |
+| <img class="col one" src="/assets/images/portfolio/ReST/swing_icon.png" width="50px"/> | Swing 시작 - Swing Browser 활성화 (SWGS)                     |
+| <img class="col one" src="/assets/images/portfolio/ReST/setting.png" width="50px"/> | 설정 - ReST 설정                                             |
+
+
+
+------
+
+## Suites 구성
+
+- Case 목록 : Category를 Hierarchy 구조로 추가하고 Category 하위에 Case를 추가하여 관리
+- Case에 대한 설명 : Case에 대한 설명을 보여주는 View 이며 HTML 형태의 Text도 표현이 가능
+- 변수 목록 : Test Tool 수행 시 Input으로 사용되는 값을 보여주는 View
+
+<div align="center">
+  <img src="/assets/images/portfolio/ReST/ReST_GUI_3.png" width="100%">
+</div>
