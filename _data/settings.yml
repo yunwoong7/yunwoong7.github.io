@@ -133,21 +133,21 @@ experience:
 services-title: Interests
 services:
 - {
-    name: R&D,
-    icon: ti-light-bulb,
-    description: 'I am very interested in R&D business such as AI, computer vision, and big data.',
+    name: Computer Vision,
+    icon: ti-eye,
+    description: 'I am interested in creating systems that autonomously do what the human vision can do.',
     active: # Add true to select section
   }
 - {
-    name: UX Design,
-    icon: ti-vector,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: RPA,
+    icon: ti-bolt,
+    description: 'I want to develop software that helps real people work in a way that is much more advanced than macros, and I want to think and solve various methods.',
     active: true # Add true to select section
   }
 - {
-    name: Interaction Design,
-    icon: ti-panel,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: Data,
+    icon: ti-image,
+    description: 'I would like to analyze the complex structured and unstructured data collected and solve many business problems that could not be solved before.',
     active: # Add true to select section
   }
 

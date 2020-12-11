@@ -2,15 +2,12 @@
 layout: portfolio
 title:  ReST
 date:   2020-11-25 13:20:14 +0300
-image:  /assets/images/portfolio/ReST.png
+image:  /assets/images/portfolio/ReST/auto_test_main.ico
 author: Yunwoong Kim
 tags:   ["RPA"]
 typora-root-url: ..
 ---
 
-<h1 align="center">
-  <img src="/assets/images/portfolio/ReST/auto_test_main.ico"><br/>ReST
-</h1>
 
 <h4 align="center">
   The RPA Solution that accelerates your digital transformation
@@ -92,7 +89,7 @@ ReST Studio 시작 페이지 구성
 
 ------
 
-## Suites 구성
+### Suites 구성
 
 - Case 목록 : Category를 Hierarchy 구조로 추가하고 Category 하위에 Case를 추가하여 관리
 - Case에 대한 설명 : Case에 대한 설명을 보여주는 View 이며 HTML 형태의 Text도 표현이 가능
@@ -101,3 +98,54 @@ ReST Studio 시작 페이지 구성
 <div align="center">
   <img src="/assets/images/portfolio/ReST/ReST_GUI_3.png" width="100%">
 </div>
+
+##### Suites Toolbar
+
+<div align="left">
+  <img src="/assets/images/portfolio/ReST/ReST_GUI_4.png" width="70%">
+</div>
+
+Suites 내 도구 모음 에는 Case와 관련된 가장 일반적인 작업이 포함되어 있습니다.
+
+| Action Button                                                | 설명                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| <img class="col one" src="/assets/images/portfolio/ReST/add_case.png" width="50px"/> | Case 를 새로 생성 - 신규 Case를 Suites에 추가                |
+| <img class="col one" src="/assets/images/portfolio/ReST/remove_case.png" width="50px"/> | Case 삭제 - 선택된 Case를 Suites에서 삭제                    |
+| <img class="col one" src="/assets/images/portfolio/ReST/move_to_up.png" width="50px"/> | Case 이동 (위) - Suites 내에서 Case의 위치를 위로 이동       |
+| <img class="col one" src="/assets/images/portfolio/ReST/move_to_down.png" width="50px"/> | Case 이동 (아래) - Suites 내에서 Case의 위치를 아래로 이동   |
+| <img class="col one" src="/assets/images/portfolio/ReST/play.png" width="50px"/> | Case 수행 - Case 내 모든 Step을 진행                         |
+| <img class="col one" src="/assets/images/portfolio/ReST/swing_icon.png" width="50px"/> | Swing 시작 - Swing Browser 활성화 (SWGS)                     |
+| <img class="col one" src="/assets/images/portfolio/ReST/rec.png" width="50px"/> | Capture 수행 - 활성화된 Swing Browser가 존재 시 가능 - Capture Dialog 활성화 |
+
+
+
+------
+
+### Case 구성
+
+- Step 목록 : Case에 포함된 Step 목록
+- Step 정보 : Step의 상세정보
+- Data 정보 : Data 상세정보
+
+<div align="center">
+  <img src="/assets/images/portfolio/ReST/ReST_GUI_5.png" width="100%">
+</div>
+
+##### Case Toolbar
+
+<div align="left">
+  <img src="/assets/images/portfolio/ReST/ReST_GUI_6.png" width="70%">
+</div>
+
+Case 내 도구 모음 에는 Step과 관련된 가장 일반적인 작업이 포함되어 있습니다.
+
+| Action Button                                                | 설명                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| <img class="col one" src="/assets/images/portfolio/ReST/new_step.png" width="50px"/> | Step을 추가 - Case 내 Step을 추가                            |
+| <img class="col one" src="/assets/images/portfolio/ReST/remove_step.png" width="50px"/> | Step 삭제 - 선택된 Step을를 Case에서 삭제                    |
+| <img class="col one" src="/assets/images/portfolio/ReST/step_copy.png" width="50px"/> | Step 복사 - Step(XHR)을 Text형태로 복사                      |
+| <img class="col one" src="/assets/images/portfolio/ReST/exclution.png" width="50px"/> | Step 제외리스트에 추가 - Step(XHR)을 제외리스트에 추가 - 추가된 Step(XHR)은 Capture 시 자동으로 제외 |
+| <img class="col one" src="/assets/images/portfolio/ReST/move_to_up.png" width="50px"/> | Step 이동 (위) - Case 내에서 Step의 위치를 위로 이동         |
+| <img class="col one" src="/assets/images/portfolio/ReST/move_to_down.png" width="50px"/> | Step 이동 (아래) - Case 내에서 Step의 위치를 아래로 이동     |
+| <img class="col one" src="/assets/images/portfolio/ReST/replay.png" width="50px"/> | Step 수행 - 선택된 Step을 수행                               |
+| <img class="col one" src="/assets/images/portfolio/ReST/update_user.png" width="50px"/> | HEAD 정보 변경 - 모든 XHR의 HEAD 정보를 일괄 변경            |
