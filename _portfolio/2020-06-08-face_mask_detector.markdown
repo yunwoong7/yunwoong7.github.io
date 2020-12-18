@@ -8,6 +8,10 @@ tags:   ["detection"]
 typora-root-url: ..
 ---
 
+마스크는 COVID-19 확산을 막는 중요한 도구이며, 마스크를 정상적으로 착용했을 때 바이러스 확산을 방지하는데 가장 효과적이라는 것이 입증되었습니다. 마스크 착용이 의무화 되면서 가급적 실내 시설은 물론, 실외에서도 다른 사람과 2m 거리두기가 어려운 경우 항상 마스크를 착용하는 것이 원칙이 되었습니다. 특히 회사에서도 근무자는 반드시 안면 마스크를 착용해야 합니다. 하지만 착용여부를 모니터링을 위한 추가 자원에 대한 요구는 회사와 사업체에 부담을 가중하고 위반행위 적발 시 당사자에게 마스크 착용을 지도하고 과태료를 부과하는 것에 대한 어려움이 있습니다. 
+
+아래에서 설명하고 있는 프로그램은 마스크 지침을 위반하는 사람을 자동으로 감지함으로써 시간을 절약하고 더 안전한 환경을 보장할 수 있습니다.
+
 <div align="center">
   <img src="https://img.shields.io/badge/python-v3.6-blue.svg"/>
   <img src="https://img.shields.io/badge/opencv-v4.1.0.25-blue.svg"/>
@@ -19,6 +23,7 @@ typora-root-url: ..
 <div align="center">
   <img src="/assets/images/portfolio/face_mask_dectector/face_mask_dectector.gif" width="70%">
 </div>
+
 
 
 
