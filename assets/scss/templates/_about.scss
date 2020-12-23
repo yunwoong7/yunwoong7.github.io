@@ -53,15 +53,3 @@
     right: -100px;
   }
 }
-
-p, .paragraph {
-  margin-top: 16px;
-  font-weight: 400;
-  color: $text-color;
-  font-size: 21px;
-  line-height: 1.8;
-  font-family: $secondary-font;
-  &-lg{
-    font-size: 22px;
-  }
-}
