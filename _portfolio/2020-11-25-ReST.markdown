@@ -8,6 +8,10 @@ tags:   ["RPA"]
 typora-root-url: ..
 ---
 
+ReST Studio는 자체 개발한 자동화 솔루션입니다. Transaction, DB, UI Operation을 포함하여 Swing 테스트를 효율적으로 설정, 생성, 실행, 보고 및 관리 할 수 있습니다.
+
+
+
 
 <h4 align="center">
   The RPA Solution that accelerates your digital transformation
@@ -24,9 +28,15 @@ typora-root-url: ..
 
 ## Description
 
-ReST Studio는 SK Holdings C&C 고객서비스팀에서 자체 개발한 자동화 솔루션입니다. Transaction, DB, UI Operation을 포함하여 Swing 테스트를 효율적으로 설정, 생성, 실행, 보고 및 관리 할 수 있습니다.
+ReST의 현재 버전은 SKT 영업망 시스템을 테스트하기 위해 최적화되어 있습니다. 그 밖의 환경에서 적용하기 위해서는 일정 부분 그에 맞도록 수정해야 합니다.
+
+현재 시장에 나와 있는 다양한 테스트 자동화툴로 기업들은 테스트 자동화를 추진해왔지만, 기존의 개발하는 방식과 레거시 코드가 테스트 자동화를 적용하기에 쉽지 않은 구조라는 것을 알 수 있습니다.  SKT의 영업망의 경우도 규정, 업무의 변화에 따라 급하게 예외 로직을 추가하였고 그렇게 누적된 코드는 단위 테스트가 사실상 불가능한 지경에 이르렀습니다.
+
+ReS Studio는 이렇게 어려운 환경에도 테스트를 자동화 할 수 있는 솔루션을 제공합니다.
 
 
+
+------
 
 ReST Studio 기능에 대해 알고 익숙해지는데 도움이 될 수 있도록 가이드 및 튜토리얼을 작성하였습니다. 참고하시어 테스트 스크립트를 생성하시기 바랍니다.
 
@@ -34,6 +44,10 @@ ReST Studio 기능에 대해 알고 익숙해지는데 도움이 될 수 있도�
 - 한번 축척된 테스트 케이스는 재사용성이 높습니다.
 - 다량의 테스트 수행이나 Regression 테스트에 활용하기 좋습니다.
 - ReST Studio 를 사용해 볼 수 있도록 몇가지 샘플 Suites을 준비했습니다.
+
+
+
+[TOC]
 
 
 
@@ -66,8 +80,7 @@ ReST Studio 시작 페이지 구성
 <div align="center">
   <img src="/assets/images/portfolio/ReST/ReST_GUI_1.png" width="100%">
 </div>
-
-##### Main Toolbar
+**Main Toolbar**
 
 <div align="left">
   <img src="/assets/images/portfolio/ReST/ReST_GUI_2.png" width="70%">
@@ -89,7 +102,7 @@ ReST Studio 시작 페이지 구성
 
 ------
 
-## Suites 구성
+### Suites 구성
 
 - Case 목록 : Category를 Hierarchy 구조로 추가하고 Category 하위에 Case를 추가하여 관리
 - Case에 대한 설명 : Case에 대한 설명을 보여주는 View 이며 HTML 형태의 Text도 표현이 가능
@@ -98,8 +111,7 @@ ReST Studio 시작 페이지 구성
 <div align="center">
   <img src="/assets/images/portfolio/ReST/ReST_GUI_3.png" width="100%">
 </div>
-
-##### Suites Toolbar
+**Suites Toolbar**
 
 <div align="left">
   <img src="/assets/images/portfolio/ReST/ReST_GUI_4.png" width="70%">
@@ -130,8 +142,7 @@ Suites 내 도구 모음 에는 Case와 관련된 가장 일반적인 작업이 
 <div align="center">
   <img src="/assets/images/portfolio/ReST/ReST_GUI_5.png" width="100%">
 </div>
-
-##### Case Toolbar
+**Case Toolbar**
 
 <div align="left">
   <img src="/assets/images/portfolio/ReST/ReST_GUI_6.png" width="70%">
@@ -149,3 +160,120 @@ Case 내 도구 모음 에는 Step과 관련된 가장 일반적인 작업이 �
 | <img class="col one" src="/assets/images/portfolio/ReST/move_to_down.png" width="50px" style="max-width: 80px;"/> | Step 이동 (아래) - Case 내에서 Step의 위치를 아래로 이동     |
 | <img class="col one" src="/assets/images/portfolio/ReST/replay.png" width="50px" style="max-width: 80px;"/> | Step 수행 - 선택된 Step을 수행                               |
 | <img class="col one" src="/assets/images/portfolio/ReST/update_user.png" width="50px" style="max-width: 80px;"/> | HEAD 정보 변경 - 모든 XHR의 HEAD 정보를 일괄 변경            |
+
+
+
+
+
+------
+
+## 테스트 Case 생성
+
+아래는 자동화 테스트 케이스를 생성하기 위한 단계별 설명입니다.
+
+1. 기본 메뉴에서 **Suites 생성** 을 클릭하세요. 신규 Suites명 입력 Dialog가 표시됩니다. Suites명을 입력 한 다음 **OK** 버튼을 클릭하여 신규 Suites를 추가합니다.
+
+   <div align="center">
+     <img src="/assets/images/portfolio/ReST/ReST_make_case_1.png" width="100%">
+   </div>
+
+   [^Suites 저장]: Tab 형태로 Suites가 추가되었으며 아직 파일로 저장된 상태는 아닙니다. Suites 저장 버튼을 누르고 파일 경로 지정 후 (.att) 파일 형태로 저장됩니다.
+
+   
+
+2. Case 등록 전에 Category를 등록 합니다. 마우스 우클릭 후 **Category 추가** 버튼을 클릭하세요.
+
+   <div align="center">
+     <img src="/assets/images/portfolio/ReST/ReST_make_case_2.png" width="100%">
+   </div>
+
+   [^Category]: Category는 Case를 Grouping하는 Node로 Case가 많아지는 경우 Case를 구분하여 보기 위한 단위임
+
+   
+
+3. 신규 Case를 추가합니다. **Case 생성** 버튼을 클릭합니다.
+
+   <div align="center">
+     <img src="/assets/images/portfolio/ReST/ReST_make_case_3.png" width="100%">
+   </div>
+
+4. **스텝(Step)을 추가**합니다. Step을 추가하는 방법은 3가지가 있습니다.
+
+   1) Step 직접 추가
+
+   - 첫번째 방법은 **Step 추가** 버튼을 클릭하고 직접 정보를 입력하여 추가합니다. JSON형태의 Data가 있는 경우에는 사용 할 수 있지만 없는 경우는 추가하기 어렵습니다.
+
+     <div align="center">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_4.png" width="100%">
+     </div>
+
+   - 현재는 Add Data Info Dialog화면이 활성화되면 임시로 ZORDSUDCS0010_TR01 의 DataList가 JSON 형태로 입력되어 있습니다. 다른 Transaction의 JSON이 있다면 붙여넣으시면 됩니다.
+
+     <div align="center">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_5.png" width="100%">
+     </div>
+
+   2) JSON 복사하여 붙여넣기
+
+   - 두번째는 JSON 형태의 Data를 **복사하여 붙여넣으면** 자동으로 추가됩니다. UI를 통해 수행했던 특정 Transaction의 값을 Step으로 동일하게 추가 할 경우 편리합니다.
+
+     <div align="center">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_6.png" width="100%">
+     </div>
+
+   - 붙여넣을 경우 자동으로 추가되며 Target명(Transaction명)도 자동으로 입력됩니다. 만약 최근에 추가되어 Transaction명이 없는 경우 해당 Transaction에 우클릭하여 Transaction정보 > Transaction명 가져오기... 를 수행하시면 자동으로 변경됩니다.
+
+     <div align="center">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_7.png" width="100%">
+     </div>
+
+   3) Swing Browser를 통한 Capture
+
+   - 마지막으로 **Swing Browser**를 통해 Capture하여 추가 할 수 있습니다. 
+
+     <div align="center">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_8.png" width="100%">
+     </div>
+
+     <div align="center">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_9.png" width="100%">
+     </div>
+
+   [^Grouping]: Step을 Grouping 하고 싶은 단위로 [Capture]를 중지하면 자동으로 Grouping 할 수 있음
+
+   - 불필요한 Transaction은 삭제 또는 제외리스트에 추가함
+
+     <div align="center">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_10.png" width="100%">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_11.png" width="100%"> 
+     </div>
+
+   - 테스트가 종료 될 때까지 3 ~ 7번을 반복하여 수행
+
+     <div align="center">
+       <img src="/assets/images/portfolio/ReST/ReST_make_case_12.png" width="100%">
+     </div>
+
+5. Step의 연결관계를 생성합니다.
+
+   <div align="center">
+     <img src="/assets/images/portfolio/ReST/ReST_make_case_13.png" width="100%">
+     <img src="/assets/images/portfolio/ReST/ReST_make_case_14.png" width="100%">
+     <img src="/assets/images/portfolio/ReST/ReST_make_case_15.png" width="100%">
+   </div>
+
+   <div align="center">
+     <img src="/assets/images/portfolio/ReST/ReST_make_case_16.png" width="100%">
+   </div>
+
+   [^참조 데이타]: SQL, SVC COMBO, List, Excel 등 Input으로 사용되는 값이며 실시간으로 가용한 데이타를 찾아서 수행하기 위한 목적으로 사용됨
+   [^변수]: Data를 연결하기 위해 사용되는 값이며 ${varaible_id}$ 형태로 선언됨
+
+   
+
+6. Case 수행
+
+   <div align="center">
+     <img src="/assets/images/portfolio/ReST/ReST_make_case_17.png" width="100%">
+   </div>
+
