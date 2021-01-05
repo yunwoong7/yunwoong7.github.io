@@ -2,7 +2,7 @@
 layout: portfolio
 title:  ReST
 date:   2020-11-25 13:20:14 +0300
-image:  /assets/images/portfolio/ReST/auto_test_main.ico
+image:  /assets/images/portfolio/ReST/performance.gif
 author: Yunwoong Kim
 tags:   ["RPA"]
 typora-root-url: ..
