@@ -237,17 +237,17 @@ portfolio-items:
       - type: "face"
       - type: "detection"
       
-  - image : "assets/images/portfolio/item-8.png"
-    url: "#"
-    portfolio-type:
-      - type: "machineLearning"
-      
   - image : "assets/images/portfolio/drowsiness_detection.png"
     url: "portfolio/2019-06-10-drowsiness_detection"
     portfolio-type:
       - type: "deeplearning"
       - type: "face"
       - type: "detection"
+
+  - image: "assets/images/portfolio/predicting_customers_withdrawn.png"
+    url: "portfolio/2017-09-12-predicting_customers_withdrawn"
+    portfolio-type:
+      - type: "machineLearning"
       
   - image : "assets/images/portfolio/item-1.png"
     url: "#"

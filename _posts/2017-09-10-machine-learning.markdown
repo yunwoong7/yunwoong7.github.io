@@ -57,3 +57,4 @@ tags:   Machine Learnin
 
 
 
+ [>> 해지고객예측 설명페이지로 이동](https://yunwoong7.github.io/portfolio/2017-09-12-predicting_customers_withdrawn/) 
