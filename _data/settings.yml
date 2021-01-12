@@ -4,7 +4,7 @@
 title: Yunwoong's Blog
 logo: 
 author: yunwoong Kim
-description: this is meta description
+description: 김윤웅의 개인 블로그입니다.
 email: yunwoong7@gmail.com
 phone: +82 010 4126 2003
 address: 71-18, Gugal-ro, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea
@@ -21,10 +21,7 @@ menu:
 # Google Analytics Section
 
 # Analytics helps you understand who visits your website.# Learn more at: http://support.google.com/analytics/answer/1008065
-
-# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
-
-google-analytics: # UA-XXXXXX-X
+google-analytics: "G-198HT4ZSJZ"
 
 
 #-------------------------------
@@ -40,9 +37,9 @@ hero:
   hero-title: Hi! I’m <br> Software <br> Developer
 
 social:
-- {icon: "ti-facebook", link: "#"}
-- {icon: "ti-instagram", link: "#"}
-- {icon: "ti-github", link: "#"}
+#- {icon: "ti-facebook", link: "#"}
+#- {icon: "ti-instagram", link: "#"}
+- {icon: "ti-github", link: "https://github.com/yunwoong7"}
 - {icon: "ti-linkedin", link: "https://www.linkedin.com/in/윤웅-김-17832919a/"}
 
 #-------------------------------

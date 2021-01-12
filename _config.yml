@@ -38,8 +38,6 @@ sass:
   sass_dir: assets/scss
   style: compressed
 
-g-analytics: "G-198HT4ZSJZ"
-
 # Exclude from processing.
 exclude:
   - Gemfile
