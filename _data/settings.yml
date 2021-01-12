@@ -248,43 +248,43 @@ portfolio-items:
     url: "portfolio/2017-09-12-predicting_customers_withdrawn"
     portfolio-type:
       - type: "machineLearning"
-      
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
-    portfolio-type:
-      - type: "deeplearning"
-      
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "rpa"
-      - type: "machineLearning"
-      - type: "deeplearning"
-      
-  - image : "assets/images/portfolio/item-7.png"
-    url: "#"
-    portfolio-type:
-      - type: "machineLearning"
+
+#  - image : "assets/images/portfolio/item-1.png"
+#    url: "#"
+#    portfolio-type:
+#      - type: "deeplearning"
+#
+#  - image : "assets/images/portfolio/item-3.png"
+#    url: "#"
+#    portfolio-type:
+#      - type: "rpa"
+#      - type: "machineLearning"
+#      - type: "deeplearning"
+#
+#  - image : "assets/images/portfolio/item-7.png"
+#    url: "#"
+#    portfolio-type:
+#      - type: "machineLearning"
 
 
 #-------------------------------
 # Testimonials Section
 
-testimonial-items:
-  - name: "Steve"
-    image: "assets/images/testimonial/who1.jfif"
-    designation : "CEO, Funder"
-    content : "매우 착하고 좋은사람이며 성격이 좋습니다. <strong>하지만 일은 못합니다.</strong> 나름대로 본인한 노력한다고 하는편입니다."
-
-  - name: "Choo Miae"
-    image: "assets/images/testimonial/who2.jfif"
-    designation: "CEO, Funder"
-    content: "일을 완결적으로 처리하는 노력하는 사람입니다. <strong>하지만 매우 이기적이며 타인을 배려하지 않습니다.</strong> 앞으로 어떻게 일하는지 두고 봐야합니다."
-
-  - name: "Donald John Trump"
-    image: "assets/images/testimonial/who1.jfif"
-    designation: "CEO, Funder"
-    content: "자기 주장이 강하며 추진력이 있습니다. <strong>하지만 제대로 들여다보면 제정상이 아닙니다.</strong> 그래서 나름 매력이 있습니다."
+#testimonial-items:
+#  - name: "Steve"
+#    image: "assets/images/testimonial/who1.jfif"
+#    designation : "CEO, Funder"
+#    content : "매우 착하고 좋은사람이며 성격이 좋습니다. <strong>하지만 일은 못합니다.</strong> 나름대로 본인한 노력한다고 하는편입니다."
+#
+#  - name: "Choo Miae"
+#    image: "assets/images/testimonial/who2.jfif"
+#    designation: "CEO, Funder"
+#    content: "일을 완결적으로 처리하는 노력하는 사람입니다. <strong>하지만 매우 이기적이며 타인을 배려하지 않습니다.</strong> 앞으로 어떻게 일하는지 두고 봐야합니다."
+#
+#  - name: "Donald John Trump"
+#    image: "assets/images/testimonial/who1.jfif"
+#    designation: "CEO, Funder"
+#    content: "자기 주장이 강하며 추진력이 있습니다. <strong>하지만 제대로 들여다보면 제정상이 아닙니다.</strong> 그래서 나름 매력이 있습니다."
 
 
 #-------------------------------
