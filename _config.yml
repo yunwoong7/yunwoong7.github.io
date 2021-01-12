@@ -37,11 +37,7 @@ sass:
   sass_dir: assets/scss
   style: compressed
 
-analytics:
-  provider: "google"
-  google:
-    tracking_id: "G-198HT4ZSJZ"
-    anonymize_ip: false # default
+g-analytics: "G-198HT4ZSJZ"
 
 # Exclude from processing.
 exclude:
