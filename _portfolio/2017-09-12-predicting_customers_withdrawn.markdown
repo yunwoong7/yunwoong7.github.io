@@ -10,9 +10,9 @@ typora-root-url: ..
 
 이동통신 시장에서는 고객 측면에서 전환 비용(Switching cost)이 매우 낮기 때문에 고객의 서비스 해지가 빈번하게 일어나고 **신규고객이나 타사의 고객을 유치하는 데에는 추가적인 비용이 발생**(단말기 보조금 지급, 판촉 행사 비용, 대리점의 수수료 등) 합니다.
 
-<h4 align="center">
+<h2 align="center">
   해지고객예측
-</h4>
+</h2>
 <div align="center">
   <img src="https://img.shields.io/badge/python-v3.5-blue.svg"/>
   <img src="https://img.shields.io/badge/PyQt5-v5.11.3-blue.svg"/>
@@ -20,6 +20,7 @@ typora-root-url: ..
   <img src="https://img.shields.io/badge/mglearn-v0.1.6-blue.svg"/>
   <img src="https://img.shields.io/badge/pandas-v0.20.3-blue.svg"/>
 </div>
+
 
 
 

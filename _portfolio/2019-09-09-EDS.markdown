@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title:  EDS
+title:  "RPA - Easy Data Sync"
 date:   2019-09-09 09:20:22 +0300
 image:  /assets/images/portfolio/EDS/EDS.png
 author: Yunwoong Kim
@@ -13,9 +13,9 @@ typora-root-url: ..
 </h1>
 
 
-<h4 align="center">
+<h2 align="center">
   The RPA Solution that accelerates your digital transformation
-</h4>
+</h2>
 <div align="center">
   <img src="https://img.shields.io/badge/python-v3.6-blue.svg"/>
   <img src="https://img.shields.io/badge/PyQt5-v5.11.3-blue.svg"/>
@@ -24,6 +24,7 @@ typora-root-url: ..
 </div>
 
 
+
 ## Description
 
-ReST Studio는 SK Holdings C&C 고객서비스팀에서 자체 개발한 자동화 솔루션입니다. Transaction, DB, UI Operation을 포함하여 Swing 테스트를 효율적으로 설정, 생성, 실행, 보고 및 관리 할 수 있습니다.
+내용 수정 중....

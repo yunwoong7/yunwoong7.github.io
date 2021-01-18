@@ -233,6 +233,11 @@ portfolio-items:
       - type: "deeplearning"
       - type: "face"
       - type: "detection"
+
+  - image : "assets/images/portfolio/automatic_order/automation_order.png"
+    url: "portfolio/2020-03-05-automatic_order"
+    portfolio-type:
+      - type: "rpa"
       
   - image : "assets/images/portfolio/drowsiness_detection.png"
     url: "portfolio/2019-06-10-drowsiness_detection"
@@ -245,11 +250,6 @@ portfolio-items:
     url: "portfolio/2017-09-12-predicting_customers_withdrawn"
     portfolio-type:
       - type: "machineLearning"
-
-  - image : "assets/images/portfolio/automatic_order/automation_order.png"
-    url: "portfolio/2020-03-05-automatic_order"
-    portfolio-type:
-      - type: "rpa"
 #
 #  - image : "assets/images/portfolio/item-3.png"
 #    url: "#"

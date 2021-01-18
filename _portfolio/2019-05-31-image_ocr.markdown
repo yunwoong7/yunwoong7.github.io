@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title:  Image OCR
+title:  "OCR - Optical Character Recognition with Python"
 date:   2019-05-31 10:10:07 +0300
 image:  /assets/images/portfolio/ocr/ocr.png
 author: Yunwoong Kim
@@ -11,10 +11,6 @@ typora-root-url: ..
 <h1 align="center">
   <img src="/assets/images/portfolio/ocr/main.ico"><br/>Image OCR
 </h1>
-
-<h4 align="center">
-  Optical Character Recognition with Python
-</h4>
 
 <div align="center">
   <img src="https://img.shields.io/badge/python-v3.5-blue.svg"/>

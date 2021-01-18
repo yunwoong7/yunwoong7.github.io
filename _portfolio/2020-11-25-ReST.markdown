@@ -12,10 +12,10 @@ ReST Studio는 자체 개발한 자동화 솔루션입니다. Transaction, DB, U
 
 
 
-
-<h4 align="center">
+<h2 align="center">
   The RPA Solution that accelerates your digital transformation
-</h4>
+</h2>
+
 
 <div align="center">
   <img src="https://img.shields.io/badge/python-v3.7-blue.svg"/>

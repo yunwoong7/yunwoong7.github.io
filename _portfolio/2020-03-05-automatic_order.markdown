@@ -10,9 +10,9 @@ typora-root-url: ..
 
 코로나 19 로 인해 마스크 품귀 현상이 지속되면서 마스크 구매 경쟁이 치열해졌습니다. 공적 마스크를 배분하는 마스크 5부제까지 시행됐지만, 여전히 마스크 구하기는 어려워서 마스크 구매가 가능한 시점에 알림을 주거나 자동으로 구매하는 프로그램을 만들었습니다.
 
-<h4 align="center">
+<h2 align="center">
   마스크 자동 구매
-</h4>
+</h2>
 <div align="center">
   <img src="https://img.shields.io/badge/python-v3.6-blue.svg"/>
   <img src="https://img.shields.io/badge/PyQt5-v5.11.3-blue.svg"/>
@@ -31,9 +31,7 @@ typora-root-url: ..
 
 ## 추진내용
 
-1. 처음에는 마스크를 게릴라로 판매하는 사이트를 크롤링하여 재고 존재 시 문자로 알람을 보내주는 방식으로 개발하였습니다.
-
-   문제는 받은 문자를 클릭하고 들어가더라도 이미 구매는 불가합니다. 문자 송/수신 시간도 존재하고 사이트는 이미 폭주 상태이기 때문입니다.
+1. 처음에는 마스크를 게릴라로 **판매하는 사이트를 크롤링하여 재고 존재 시 문자로 알람**을 보내주는 방식으로 개발하였습니다. 문제는 받은 문자를 클릭하고 들어가더라도 이미 구매는 불가합니다. 문자 송/수신 시간도 존재하고 사이트는 이미 폭주 상태이기 때문입니다.
 
    
 
@@ -45,9 +43,7 @@ typora-root-url: ..
 
    
 
-2. 이후 수정하여 구매가 가능한 시점에 구매하기 버튼까지 클릭하고 결제 대기 상태에 대기하도록 했습니다.
-
-   역시 문제는 이 시점에 결제하기를 눌렀는데도 품절로 구매가 안 되었죠. 사실상 판매 오픈 후 대략 40초 ~ 1분 사이에 품절이 되기 때문입니다.
+2. 이후 수정하여 구매가 가능한 시점에 **구매하기 버튼까지 클릭하고 결제 대기 상태에 대기**하도록 했습니다. 역시 문제는 이 시점에 결제하기를 눌렀는데도 품절로 구매가 안 되었죠. 사실상 판매 오픈 후 대략 40초 ~ 1분 사이에 품절이 되기 때문입니다.
 
    <div align="center">
      <img src="/assets/images/portfolio/automatic_order/automation_order_2.png" width="30%">
@@ -55,7 +51,7 @@ typora-root-url: ..
 
    
 
-3. 네이버스토어 결제 시 비빌번호 입력창(네이버페이)의 경우 입력창 이미지는 랜덤하게 변경되기 때문에 pyautogui를 이용하여 자동으로 인식하여 클릭하도록 반영했습니다.
+3. 네이버스토어 결제 시 비빌번호 입력창(네이버페이)의 경우 입력창 이미지는 랜덤하게 변경되기 때문에 pyautogui를 이용하여 **자동으로 인식하여 클릭**하도록 반영했습니다.
 
    <div align="center">
      <img src="/assets/images/portfolio/automatic_order/automation_order_3.png" width="30%">
@@ -63,11 +59,13 @@ typora-root-url: ..
 
    
 
-4. 네이버페이 결제를 위해 창을 전환하는 시간과 자동으로 인식하는 약간의 시간이 존재하여 조금 더 빠른 결제를 위해 결제수단을 "나중에 결제"로 변경하였습니다.
+4. 네이버페이 결제를 위해 창을 전환하는 시간과 자동으로 인식하는 약간의 시간이 존재하여 조금 더 빠른 결제를 위해 **결제수단을 "나중에 결제"로 변경**하였습니다.
 
    <div align="center">
      <img src="/assets/images/portfolio/automatic_order/automation_order_4.png" width="70%">
    </div>
+
+
 
 
 
@@ -105,6 +103,8 @@ else:
 
 mouse = Controller()
 ```
+
+
 N개로 수행 할 수 있도록 Browser 라는 클래스로 만듭니다. Input으로 User ID, Password, Pay Number를 받습니다.
 
 ```python
@@ -129,6 +129,8 @@ class Browser:
             user32 = windll.user32
             user32.SetProcessDPIAware()
 ```
+
+
 크롬을 사용합니다. 창을 활성화하지 않을 경우 option으로 headless를 추가합니다.
 
 ```python
@@ -142,6 +144,8 @@ class Browser:
         self.driver = webdriver.Chrome('chromedriver', chrome_options=chrome_options)
 ```
 
+
+
 구매상품에 따라 옵션이 존재 할 수 있습니다. (Ex - 사이즈, 색상 등) 구매하고자 하는 옵션을 입력받고 존재하지 않은 경우 (품절 포함) 다른 상품을 선택하여 구매할 지 입력합니다.
 
 ```python
@@ -151,6 +155,8 @@ class Browser:
         self.option = option
         self.another = another
 ```
+
+
 
 로그인을 수행합니다. 자동 로그인 방지를 우회하기 위해 스크립트로 id와 password를 변경합니다.
 
@@ -166,6 +172,8 @@ class Browser:
         print('{} 로그인'.format(self.user_id))
         time.sleep(1)
 ```
+
+
 
 상품의 재고 여부를 조회합니다. 재고가 존재할 때까지 반복적으로 수행합니다.
 
@@ -245,6 +253,8 @@ class Browser:
 
         self.checkout()
 ```
+
+
 구매를 진행합니다. 위에 설명해 드린 것처럼 자동결제까지 구현했다가 좀 더 빠른 구매를 위해 "나중에 결제"로 변경하였습니다.
 
 ```python
@@ -332,6 +342,8 @@ class Browser:
             # 10분간 대기 이후 Thread는 종료
             time.sleep(600)
 ```
+
+
 모든 수행은 Thread로 수행됩니다.
 
 ```python
@@ -419,7 +431,7 @@ for num in distinct_num:
 
 
 <div align="center">
-  <img src="/assets/images/portfolio/automatic_order/automation_order_5.png" width="100%">
+  <img src="/assets/images/portfolio/automatic_order/automation_order_5.png" width="70%">
 </div>
 
 
@@ -427,7 +439,7 @@ for num in distinct_num:
 마지막으로 UI를 포함하여 개발하였습니다. UI를 개발할 때에는 다른 사용자가 사용한다는 생각으로 개발하다보니 고민해야 할 게 항상 많은 것 같습니다.
 
 <div align="center">
-  <img src="/assets/images/portfolio/automatic_order/automation_order_6.png" width="100%">
+  <img src="/assets/images/portfolio/automatic_order/automation_order_6.png" width="70%">
 </div>
 
 프로그램을 이용하여 대량으로 구매하진 않았습니다. 마스크 품귀 현상이 지속되고 이미 많은 사람이 기술(UiPath, Selenium, Macro 등)을 이용하여 구매하고 있었죠. **기술과 정보의 격차로 인한 마스크 수급의 차이**가 있었는데 마스크 페이지가 열리면 "새로고침"을 하고 있는 저를 보면서 **나는 과연 지금까지 나의 편의를 위해 개발을 한 적이 있었는지 의문**에서 개발하였습니다.
