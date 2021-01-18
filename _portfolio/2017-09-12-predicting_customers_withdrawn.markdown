@@ -1,10 +1,10 @@
 ---
 layout: portfolio
-title:  해지고객예측
+title:  "Machine Learning - 해지고객예측"
 date:   2017-09-12 08:41:17 +0300
 image: /assets/images/portfolio/predicting_customers_withdrawn/predicting_customers_withdrawn.png
 author: Yunwoong Kim
-tags:   ["Machine Learnin"]
+tags:   ["Machine Learning"]
 typora-root-url: ..
 ---
 

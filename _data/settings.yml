@@ -246,10 +246,10 @@ portfolio-items:
     portfolio-type:
       - type: "machineLearning"
 
-#  - image : "assets/images/portfolio/item-1.png"
-#    url: "#"
-#    portfolio-type:
-#      - type: "deeplearning"
+  - image : "assets/images/portfolio/automatic_order/automation_order.png"
+    url: "portfolio/2020-03-05-automatic_order"
+    portfolio-type:
+      - type: "rpa"
 #
 #  - image : "assets/images/portfolio/item-3.png"
 #    url: "#"
