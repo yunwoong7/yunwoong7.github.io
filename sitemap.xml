@@ -26,4 +26,28 @@ layout: null
 
     </url>
   {% endfor %}
+
+  {% for portfolio in site.portfolio %}
+    <url>
+      <loc>{{ site.url }}{{ portfolio.url }}</loc>
+      {% if portfolio.lastmod == null %}
+        <lastmod>{{ portfolio.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ portfolio.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+
+      {% if portfolio.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>{{ portfolio.sitemap.changefreq }}</changefreq>
+      {% endif %}
+
+      {% if portfolio.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority>{{ portfolio.sitemap.priority }}</priority>
+      {% endif %}
+
+    </url>
+  {% endfor %}
 </urlset>
