@@ -43,7 +43,7 @@ MP3 라는 신기술은 시장에 큰 영향을 주었지만 결국 사업의 �
 
 
 
-## Digital Transformaion (DT)
+## Digital Transformation (DT)
 
 정리하면, MP3라는 새로운 기술이 등장하였지만, 아이튠즈(iTunes)를 통해 음원의 “소유”라는 새로운 경험을 제공하여 음반시장을 Digital Download 영역으로 재편하였고, 이제는 스포티파이(Spotify)같은 스트리밍(Streaming) 방식의 “접근”이 패러다임을 다시 변화시켜 이전과는 전혀 다른 사용자 경험을 제공하고 사업영역을 확장하고 있는 것입니다.  
 
