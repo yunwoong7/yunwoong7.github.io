@@ -27,4 +27,158 @@ typora-root-url: ..
 
 ## Description
 
-내용 수정 중....
+시스템을 운영하다보면 테스트 DB에 반영하고 단위테스트와 통합테스트를 진행하고 변경한 데이타를 운영기에  반영해는 경우가 많습니다. 동일한 DBMS이거나 한 두개 정도의 테이블만 복제/동기화 해야한다면 시중에 잘 알려진 복제 툴을 사용해도 문제가 아닐 것입니다. 허나 시스템이 방대해지면서 여러 종류의 DB와 Table을 사용해야하고 특정 데이타만 동기화 하고 싶다면 단순한 복제 툴로 해결하기 어려워 집니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_1.png" width="80%">
+</div>
+
+실제로 하나의 기준을 설정하기 위해 84개의 테이블에 접근하고 800Row에 가까운 Insert가 이루어집니다. 화면을 통해 기준을 넣다보면 4~6시간이 소요됩니다.
+
+
+
+## 기능
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_13.png" width="80%">
+</div>
+
+​    1) 모니터링
+
+​         \- OBJECT(상품/할인) 기준으로 정의된 Table의 데이타를 조회
+
+​         \- 각 테이블별로 조회된 Souce DB / Target DB 결과값이 다른 경우 표시
+
+​         \- 'NOT EXISTS' Row의 경우 해당 DB에는 존재하지 않는 값
+
+​         \- 2개 이상의 Table을 참조하여 결과를 추출하는 경우 다른 Table의 결과값이 영향 줄 수 있음
+
+​         \- Data 검증 시 비교하는 Column에서 제외하려면 [Table] 우클릭 > 'Column Setting'
+
+
+
+​    2) 데이타 동기화
+
+​         \- 오처리를 방지하기 위해 데이타 동기화를 단방향으로만 가능하도록 설정가능 (Source -> Target)
+
+​         \- 데이타 동기화 시 Object가 Table에 직접적으로 포함되어 있는 경우 먼저 처리
+
+​         \- 2개 이상의 Table을 참조하는 경우는 Object를 직접적으로 포함하고 있는 Table 선처리 후 처리
+
+
+
+​    3) 순환 SQL
+
+​         \- 정해진 Cycle에 따라 반복적으로 SQL을 수행
+
+​         \- 결과값을 SMS/MMS으로 전송
+
+
+
+## 메인화면
+
+UI Tool을 이용하여 모니터링 및 편리한 조작이 가능하도록 제공합니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_2.png" width="100%">
+</div>
+
+
+
+## Session
+
+이기종 DBMS Session 연결이 가능하고 계정 자동 저장 기능을 제공합니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_3.png" width="100%">
+</div>
+
+
+
+## Objec조회 & Fetch
+
+Object는 Table에서 Fetch 할 대상 (Ex. 식별키, ID 등)을 Object List에 추가합니다. 다건의 Object 추가가 가능합니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_4.png" width="100%">
+</div>
+
+설정된 Table에서 Objec에 해당하는 데이타를 추출합니다.
+
+Source Table의 건수와 Target Table의 건수를 표기하며 다른 데이터의 건수도 표기합니다. 이때 다른 데이타가 존재하는 경우 붉은 색상으로 나타냅니다. 각 테이블을 클릭하여 확인하거나 전체 Fetch 후 확인이 가능합니다.
+
+<div align="left">
+  <img src="/assets/images/portfolio/EDS/EDS_1_1.gif" width="70%">
+</div>
+
+각 Table별 SQL을 등록하여 조건을 설정 할 수 있습니다. 조건을 설정 시 N개의 Table을 Join하여 설정 할 수도 있습니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_5.png" width="100%">
+</div>
+
+Source와 Target Table을 비교 할 때 Table의 Column으로 비교하며 Table별로 비교 대상 Column을 설정 할 수 있습니다. (유동적인 유효시작일시과 같은 대상은 제외)
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_10.png" width="100%">
+</div>
+
+Table의 그룹, DML 가능여부, 처리 우선순위 등을 설정 할 수 있습니다. 
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_11.png" width="100%">
+</div>
+
+
+
+## Data Synchronization
+
+DML은 Insert, Update, Merge 가 가능하며 복제 및 동기화 대상 Table과 Row를 직접 선택 할 수도 있습니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_6.png" width="100%">
+</div>
+
+Thead 병렬 처리가 가능하여 빠른 복제 및 동기화가 가능합니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_7.png" width="100%">
+</div>
+
+
+
+## Report
+
+처리결과에 대한 간단한 Report를 확인 할 수 있습니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_8.png" width="100%">
+</div>
+
+
+
+## Setting
+
+로그 보관주기, 기본 DML 방법 등을 설정 할 수 있습니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_9.png" width="100%">
+</div>
+
+
+
+## 다른이름으로 저장
+
+작업 대상을 SQL문으로 저장하거나 Excel로 저장이 가능합니다.
+
+<div align="center">
+  <img src="/assets/images/portfolio/EDS/EDS_12.png" width="100%">
+</div>
+
+
+
+## 마무리..
+
+기존에는 작업시간이 많이 소요되기때문에 기준 설정 시 Test 장비에는 간략히만 넣어 테스트 하거나 운영기 DB에만 넣을 때도 있었습니다. 그리고 Test 장비까지는 잘 입력했다가 운영기 DB에 잘못 넣어 장애가 발생했던 경우도 있습니다.
+
+EDS를 사용하고 4 ~ 6시간 걸리던 작업이 5분안에 끝나기도 하고 Test 장비 DB와 운영 장비 DB가 항상 동기화로 유지되게 되었습니다.
