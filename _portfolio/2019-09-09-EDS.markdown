@@ -22,7 +22,7 @@ typora-root-url: ..
   <img src="https://img.shields.io/badge/cxOracle-v7.1.0-blue.svg"/>
   <img src="https://img.shields.io/badge/pandas-v0.23.4-blue.svg"/>
 </div>
-
+<a href="https://youtu.be/KCeKnnNfFuQ" target="_blank" title="EDS 주요기능" rel="nofollow"><img width="100%" src="/assets/images/portfolio/EDS/EDS_14.png">
 
 
 ## Description
