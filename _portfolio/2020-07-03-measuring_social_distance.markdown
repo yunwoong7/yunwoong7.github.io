@@ -29,6 +29,8 @@ typora-root-url: ..
 
 
 
+------
+
 사람을 Detect 하기 위해서 YOLO object detector를 사용합니다.
 
 ```python
