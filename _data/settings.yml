@@ -163,12 +163,12 @@ portfolio-home-items:
     
   - image : "assets/images/portfolio/EDS.png"
     url: "portfolio/2019-09-09-EDS"
-    
+
+  - image : "assets/images/portfolio/measure_social_distancing.png"
+    url: "portfolio/2020-03-03-measuring_social_distance"
+
   - image : "assets/images/portfolio/face_mask_detector.png"
     url: "portfolio/2020-06-08-face_mask_detector"
-    
-  - image : "assets/images/portfolio/drowsiness_detection.png"
-    url: "portfolio/2019-06-10-drowsiness_detection"
 
 
 # Portfolio Page
@@ -226,7 +226,14 @@ portfolio-items:
     portfolio-type:
       - type: "rpa"
       - type: "db"
-      
+
+  - image : "assets/images/portfolio/measure_social_distancing.png"
+    url: "portfolio/2020-03-03-measuring_social_distance"
+    portfolio-type:
+      - type: "deeplearning"
+      - type: "detection"
+      - type: "tracking"
+
   - image : "assets/images/portfolio/face_mask_detector.png"
     url: "portfolio/2020-06-08-face_mask_detector"
     portfolio-type:
