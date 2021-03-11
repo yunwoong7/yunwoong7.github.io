@@ -165,7 +165,7 @@ portfolio-home-items:
     url: "portfolio/2019-09-09-EDS"
 
   - image : "assets/images/portfolio/measure_social_distancing.png"
-    url: "portfolio/2020-03-03-measuring_social_distance"
+    url: "portfolio/2020-07-03-measuring_social_distance"
 
   - image : "assets/images/portfolio/face_mask_detector.png"
     url: "portfolio/2020-06-08-face_mask_detector"
@@ -228,7 +228,7 @@ portfolio-items:
       - type: "db"
 
   - image : "assets/images/portfolio/measure_social_distancing.png"
-    url: "portfolio/2020-03-03-measuring_social_distance"
+    url: "portfolio/2020-07-03-measuring_social_distance"
     portfolio-type:
       - type: "deeplearning"
       - type: "detection"
