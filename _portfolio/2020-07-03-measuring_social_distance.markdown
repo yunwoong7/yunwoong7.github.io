@@ -2,7 +2,7 @@
 layout: portfolio
 title:  "Covid-19 사회적 거리두기 측정"
 date:   2020-07-03 22:05:24 +0300
-image:  /assets/images/portfolio/ReST/measure_social_distancing.png
+image:  /assets/images/portfolio/measure_social_distancing/measure_social_distancing.png
 author: Yunwoong Kim
 tags:   ["Deep Learning"]
 
