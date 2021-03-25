@@ -222,7 +222,7 @@ portfolio-items:
       - type: "rpa"
 
   - image: "assets/images/portfolio/signature_verification.png"
-    url: "portfolio/2021-03-25-image_signature_verification"
+    url: "portfolio/2021-03-25-signature_verification"
     portfolio-type:
       - type: "deeplearning"
       - type: "machineLearning"
