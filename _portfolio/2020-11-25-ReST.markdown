@@ -83,9 +83,9 @@ ReST Studio 시작 페이지 구성
 기본 도구 모음 에는 Suites와 관련된 가장 일반적인 작업이 포함되어 있습니다.
 
 | Action Button                                                | 설명                                                         |
-| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <img class="col one" src="/assets/images/portfolio/ReST/new_suites.png" width="50px" style="max-width: 80px;"/> | Suites 를 새로 생성 - 신규 Tab 형태로 Suites 추가            |
-| <img class="col one" src="/assets/images/portfolio/ReST/open_suites.png" width="50px" style="max-width: 80px;"/> | 설명Suites 열기 - (*.att) 파일로 저장되어 있는 Suites 를 불러와 Tab 형태로 추 |
+| <img class="col one" src="/assets/images/portfolio/ReST/open_suites.png" width="50px" style="max-width: 80px;"/> | 설명Suites 열기 - (*.att) 파일로 저장되어 있는 Suites 를 불러와 Tab 형태로 추가 |
 | <img class="col one" src="/assets/images/portfolio/ReST/save_suites.png" width="50px" style="max-width: 80px;"/> | Suites 저장 - Suites를 (*.att) 파일로 저장                   |
 | <img class="col one" src="/assets/images/portfolio/ReST/ref.png" width="50px" style="max-width: 80px;"/> | 참조 데이타 Dialog 화면 활성화 - List, SVC COMBO, SQL, Excel 등의 참조데이타를 관리하기 위한 팝업화면 활성화 |
 | <img class="col one" src="/assets/images/portfolio/ReST/search.png" width="50px" style="max-width: 80px;"/> | 검색 - Step에서 Target 또는 Data를 검색하여 이동             |

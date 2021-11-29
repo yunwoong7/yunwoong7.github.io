@@ -85,4 +85,6 @@ ROI_LOCATIONS = [ROILocation ("signiture1", (1260, 425, 280, 40)),
   <img src="/assets/images/portfolio/signature_verification/signature_verification_7.png" width="70%">
 </div>
 
+
+
 - 100 epoch 을 수행하였으며 Training set에서 99.04%, Testing set에서 97.14%의 성능으로 측정

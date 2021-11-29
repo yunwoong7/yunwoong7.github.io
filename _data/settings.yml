@@ -96,6 +96,7 @@ skills:
 - {name: Javascrip, color: '#ffbcaa', value: '80%'}
 - {name: SQL, color: '#b5fbe2', value: '90%'}
 - {name: DL/ML, color: '#ffbcc8', value: '70%'}
+- {name: Kotlin, color: '#ffa500', value: '60%'}
 
 
 #-------------------------------
