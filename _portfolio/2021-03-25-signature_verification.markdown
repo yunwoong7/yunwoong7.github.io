@@ -48,6 +48,9 @@ typora-root-url: ..
 <div align="left">
   <img src="/assets/images/portfolio/signature_verification/signature_verification_3.png" width="50%">
 </div>
+<div class="video-container">
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/GKFl84EGfWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## 2) ROI (Region of interest)
 
