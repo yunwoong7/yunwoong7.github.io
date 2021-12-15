@@ -131,7 +131,9 @@ PC에서 Mobile App\ 화면 전환이 가능하며, Mobile App에서 입력한 �
 
 ------
 
-<시연 영상 보기>
+
+
+*시연 영상 (전체)*
 
 <div class="video-container">
 <iframe width="1075" height="753" src="https://www.youtube.com/embed/7gj2POhsHMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

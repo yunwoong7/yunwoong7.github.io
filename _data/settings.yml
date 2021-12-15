@@ -162,7 +162,7 @@ portfolio-home-items:
   - image : "assets/images/portfolio/ocr.png"
     url: "portfolio/2019-05-31-image_ocr"
     
-  - image : "assets/images/paperless_hospital.png"
+  - image : "assets/images/portfolio/paperless_hospital.png"
     url: "portfolio/2021-12-15-paperless_hospital"
 
   - image : "assets/images/portfolio/measure_social_distancing.png"
