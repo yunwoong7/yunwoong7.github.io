@@ -111,7 +111,7 @@ experience:
 - {name: SKT Swing Project, icon: 'icon-1.png', date: 'Nov 2014 - Sep 2017', organization: 'Senior Software Developer'}
 - {name: OCR Solution, icon: 'icon-3.png', date: 'Oct 2018 - May 2019', organization: 'Senior Software Developer'}
 - {name: Database Solution, icon: 'icon-3.png', date: 'Jul 2019 - Oct 2019', organization: 'Senior Software Developer'}
-- {name: RPA Solution, icon: 'icon-3.png', date: 'Jan 2020 - Nov 2020', organization: 'Senior Software Developer'}
+- {name: RPA Solution, icon: 'icon-3.png', date: 'Jan 2020 - Dec 2021', organization: 'Senior Software Developer'}
 
 
 #-------------------------------
@@ -162,8 +162,8 @@ portfolio-home-items:
   - image : "assets/images/portfolio/ocr.png"
     url: "portfolio/2019-05-31-image_ocr"
     
-  - image : "assets/images/portfolio/EDS.png"
-    url: "portfolio/2019-09-09-EDS"
+  - image : "assets/images/paperless_hospital/paperless_hospital.png"
+    url: "portfolio/2021-12-15-paperless_hospital"
 
   - image : "assets/images/portfolio/measure_social_distancing.png"
     url: "portfolio/2020-07-03-measuring_social_distance"
@@ -213,7 +213,13 @@ portfolio-items:
     portfolio-type:
      - type: "rpa"
      - type: "machineLearning"
-      
+
+  - image: "assets/images/portfolio/paperless_hospital.png"
+    url: "portfolio/2021-12-25-paperless_hospital"
+    portfolio-type:
+      - type: "detection"
+      - type: "rpa"
+
   - image : "assets/images/portfolio/ocr.png"
     url: "portfolio/2019-05-31-image_ocr"
     portfolio-type:
