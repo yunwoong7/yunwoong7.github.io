@@ -24,10 +24,6 @@ typora-root-url: ..
   <img src="https://img.shields.io/badge/pillow-v8.4.0-blue.svg"/>
 </div>
 
-<div align="center">
-  <img src="/assets/images/portfolio/paperless_hospital/paperless_hospital.png" width="100%">
-</div>
-
 
 
 ## 골칫거리 "종이서류"
@@ -135,7 +131,7 @@ PC에서 Mobile App\ 화면 전환이 가능하며, Mobile App에서 입력한 �
 
 ------
 
-*<시연 영상 보기>*
+<시연 영상 보기>
 
 <div class="video-container">
 <iframe width="1075" height="753" src="https://www.youtube.com/embed/7gj2POhsHMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
