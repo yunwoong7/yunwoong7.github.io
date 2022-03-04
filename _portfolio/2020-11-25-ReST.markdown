@@ -24,7 +24,10 @@ ReST Studio는 자체 개발한 자동화 솔루션입니다. Transaction, DB, U
   <img src="https://img.shields.io/badge/requests-v2.23.0-blue.svg"/>
   <img src="https://img.shields.io/badge/selenium-v3.141.0-blue.svg"/>
 </div>
-<a href="https://youtu.be/I6YLTDS6KlM" target="_blank" title="ReST 주요기능" rel="nofollow"><img width="100%" src="/assets/images/portfolio/ReST/ReST_play.png"></a>
+
+<div class="video-container">
+<iframe width="1075" height="753" src="https://www.youtube.com/embed/I6YLTDS6KlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Description
 
