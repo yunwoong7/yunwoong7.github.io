@@ -14,7 +14,7 @@ typora-root-url: ..
 
 
 <h2 align="center">
-  The RPA Solution that accelerates your digital transformation
+  Database Migration & Synchronization
 </h2>
 <div align="center">
   <img src="https://img.shields.io/badge/python-v3.6-blue.svg"/>
