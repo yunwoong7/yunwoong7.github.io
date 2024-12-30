@@ -8,7 +8,7 @@ signature: assets/images/about/signature.png
 
 안녕하세요. 김윤웅입니다. 👋
 
-저는 현재 SK 주식회사 C&C에 근무하고 있습니다.
+저는 현재 AWS Prototyping Engineer로 근무하고 있습니다.
 
 프로그램 개발을 좋아하는데 다행히 입사 후 개발을 할 수 있는 좋은 기회가 많아 다양한 경험을
 
